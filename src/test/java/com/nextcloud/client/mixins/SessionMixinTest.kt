@@ -18,11 +18,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.mixins
+package com.nextcloud.client.mixins
 
 import android.app.Activity
 import android.content.ContentResolver
-import li.raymond.raymocloud.account.UserAccountManager
+import com.nextcloud.client.account.UserAccountManager
 import com.nhaarman.mockitokotlin2.verify
 import org.junit.Before
 import org.junit.Test

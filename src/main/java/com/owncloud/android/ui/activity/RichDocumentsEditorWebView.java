@@ -38,9 +38,9 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-import li.raymond.raymocloud.account.CurrentAccountProvider;
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.network.ClientFactory;
+import com.nextcloud.client.account.CurrentAccountProvider;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.network.ClientFactory;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.OwnCloudAccount;

@@ -25,8 +25,8 @@ package com.owncloud.android.ui.activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.jobs.BackgroundJobManager;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.jobs.BackgroundJobManager;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.ui.fragment.FileFragment;

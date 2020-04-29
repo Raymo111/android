@@ -21,7 +21,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import li.raymond.raymocloud.account.User;
+import com.nextcloud.client.account.User;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;

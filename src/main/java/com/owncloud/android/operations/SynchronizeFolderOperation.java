@@ -25,7 +25,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 
-import li.raymond.raymocloud.account.User;
+import com.nextcloud.client.account.User;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.files.services.FileDownloader;

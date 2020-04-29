@@ -30,8 +30,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.preferences.AppPreferences;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.preferences.AppPreferences;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.ThumbnailsCacheManager;

@@ -1,4 +1,4 @@
-# Package li.raymond.raymocloud.migrations
+# Package com.nextcloud.client.migrations
 
 This package provides utitilies to migrate application state
 during version upgrade.

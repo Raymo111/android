@@ -38,10 +38,10 @@ import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.di.Injectable;
-import li.raymond.raymocloud.network.ClientFactory;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.di.Injectable;
+import com.nextcloud.client.network.ClientFactory;
 import com.nextcloud.common.NextcloudClient;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;

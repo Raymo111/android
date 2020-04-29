@@ -21,7 +21,7 @@
  * You should have received a copy of the GNU Affero General Public
  * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.onboarding;
+package com.nextcloud.client.onboarding;
 
 import android.os.Bundle;
 import android.view.View;
@@ -29,9 +29,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import li.raymond.raymocloud.appinfo.AppInfo;
-import li.raymond.raymocloud.di.Injectable;
-import li.raymond.raymocloud.preferences.AppPreferences;
+import com.nextcloud.client.appinfo.AppInfo;
+import com.nextcloud.client.di.Injectable;
+import com.nextcloud.client.preferences.AppPreferences;
 import com.owncloud.android.BuildConfig;
 import com.owncloud.android.R;
 import com.owncloud.android.ui.adapter.FeaturesViewAdapter;

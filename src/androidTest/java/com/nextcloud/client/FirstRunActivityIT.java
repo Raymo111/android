@@ -26,7 +26,7 @@ import android.Manifest;
 import android.app.Activity;
 
 import com.facebook.testing.screenshot.Screenshot;
-import li.raymond.raymocloud.onboarding.FirstRunActivity;
+import com.nextcloud.client.onboarding.FirstRunActivity;
 import com.owncloud.android.AbstractIT;
 
 import org.junit.Rule;

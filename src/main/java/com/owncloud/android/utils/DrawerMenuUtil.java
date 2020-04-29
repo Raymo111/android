@@ -26,7 +26,7 @@ package com.owncloud.android.utils;
 import android.content.res.Resources;
 import android.view.Menu;
 
-import li.raymond.raymocloud.account.User;
+import com.nextcloud.client.account.User;
 import com.owncloud.android.R;
 import com.owncloud.android.lib.resources.status.OCCapability;
 import com.owncloud.android.lib.resources.status.OwnCloudVersion;

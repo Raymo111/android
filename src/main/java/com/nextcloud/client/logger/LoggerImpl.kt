@@ -17,11 +17,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.logger
+package com.nextcloud.client.logger
 
 import android.os.Handler
 import android.util.Log
-import li.raymond.raymocloud.core.Clock
+import com.nextcloud.client.core.Clock
 import java.util.Date
 import java.util.concurrent.BlockingQueue
 import java.util.concurrent.LinkedBlockingQueue

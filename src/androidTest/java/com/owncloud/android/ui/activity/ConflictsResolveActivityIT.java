@@ -25,7 +25,7 @@ package com.owncloud.android.ui.activity;
 import android.content.Intent;
 
 import com.facebook.testing.screenshot.Screenshot;
-import li.raymond.raymocloud.account.UserAccountManagerImpl;
+import com.nextcloud.client.account.UserAccountManagerImpl;
 import com.owncloud.android.AbstractIT;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;

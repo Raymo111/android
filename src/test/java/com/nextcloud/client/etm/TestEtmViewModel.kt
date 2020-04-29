@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.etm
+package com.nextcloud.client.etm
 
 import android.accounts.AccountManager
 import android.content.SharedPreferences
@@ -25,11 +25,11 @@ import android.content.res.Resources
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import li.raymond.raymocloud.etm.pages.EtmBackgroundJobsFragment
-import li.raymond.raymocloud.jobs.BackgroundJobManager
-import li.raymond.raymocloud.jobs.JobInfo
-import li.raymond.raymocloud.migrations.MigrationsDb
-import li.raymond.raymocloud.migrations.MigrationsManager
+import com.nextcloud.client.etm.pages.EtmBackgroundJobsFragment
+import com.nextcloud.client.jobs.BackgroundJobManager
+import com.nextcloud.client.jobs.JobInfo
+import com.nextcloud.client.migrations.MigrationsDb
+import com.nextcloud.client.migrations.MigrationsManager
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.eq

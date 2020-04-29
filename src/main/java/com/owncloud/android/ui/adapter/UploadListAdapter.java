@@ -44,11 +44,11 @@ import android.widget.TextView;
 
 import com.afollestad.sectionedrecyclerview.SectionedRecyclerViewAdapter;
 import com.afollestad.sectionedrecyclerview.SectionedViewHolder;
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.core.Clock;
-import li.raymond.raymocloud.device.PowerManagementService;
-import li.raymond.raymocloud.network.ConnectivityService;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.core.Clock;
+import com.nextcloud.client.device.PowerManagementService;
+import com.nextcloud.client.network.ConnectivityService;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;

@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.logger.ui
+package com.nextcloud.client.logger.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -25,7 +25,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import li.raymond.raymocloud.logger.LogEntry
+import com.nextcloud.client.logger.LogEntry
 import com.owncloud.android.R
 import java.text.SimpleDateFormat
 import java.util.Locale

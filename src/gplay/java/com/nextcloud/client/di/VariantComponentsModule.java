@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public
  * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.di;
+package com.nextcloud.client.di;
 
 import com.owncloud.android.authentication.ModifiedAuthenticatorActivity;
 import com.owncloud.android.services.firebase.NCFirebaseMessagingService;

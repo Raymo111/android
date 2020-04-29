@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.jobs
+package com.nextcloud.client.jobs
 
 import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import li.raymond.raymocloud.device.PowerManagementService
+import com.nextcloud.client.device.PowerManagementService
 import com.owncloud.android.datamodel.SyncedFolderProvider
 
 /**

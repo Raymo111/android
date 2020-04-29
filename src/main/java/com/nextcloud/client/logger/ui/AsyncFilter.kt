@@ -17,10 +17,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.logger.ui
+package com.nextcloud.client.logger.ui
 
-import li.raymond.raymocloud.core.AsyncRunner
-import li.raymond.raymocloud.core.Cancellable
+import com.nextcloud.client.core.AsyncRunner
+import com.nextcloud.client.core.Cancellable
 
 /**
  * This utility class allows implementation of as-you-type filtering of large collections.

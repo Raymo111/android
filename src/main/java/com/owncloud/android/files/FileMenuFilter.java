@@ -29,8 +29,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.gson.Gson;
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.device.DeviceInfo;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.device.DeviceInfo;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.ArbitraryDataProvider;
 import com.owncloud.android.datamodel.OCFile;

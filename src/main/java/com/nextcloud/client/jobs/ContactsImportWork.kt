@@ -19,7 +19,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.jobs
+package com.nextcloud.client.jobs
 
 import android.content.ContentResolver
 import android.content.Context
@@ -28,7 +28,7 @@ import android.net.Uri
 import android.provider.ContactsContract
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import li.raymond.raymocloud.logger.Logger
+import com.nextcloud.client.logger.Logger
 import com.owncloud.android.ui.fragment.contactsbackup.ContactListFragment
 import com.owncloud.android.ui.fragment.contactsbackup.ContactListFragment.VCardComparator
 import ezvcard.Ezvcard

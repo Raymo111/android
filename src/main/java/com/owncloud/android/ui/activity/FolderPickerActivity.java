@@ -40,8 +40,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.google.android.material.button.MaterialButton;
-import li.raymond.raymocloud.di.Injectable;
-import li.raymond.raymocloud.preferences.AppPreferences;
+import com.nextcloud.client.di.Injectable;
+import com.nextcloud.client.preferences.AppPreferences;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.OCFile;

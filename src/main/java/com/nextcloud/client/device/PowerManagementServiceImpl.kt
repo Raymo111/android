@@ -19,7 +19,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.device
+package com.nextcloud.client.device
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -28,8 +28,8 @@ import android.content.IntentFilter
 import android.os.BatteryManager
 import android.os.Build
 import android.os.PowerManager
-import li.raymond.raymocloud.preferences.AppPreferences
-import li.raymond.raymocloud.preferences.AppPreferencesImpl
+import com.nextcloud.client.preferences.AppPreferences
+import com.nextcloud.client.preferences.AppPreferencesImpl
 
 internal class PowerManagementServiceImpl(
     private val context: Context,

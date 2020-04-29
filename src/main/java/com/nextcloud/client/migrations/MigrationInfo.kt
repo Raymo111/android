@@ -17,6 +17,6 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.migrations
+package com.nextcloud.client.migrations
 
 data class MigrationInfo(val id: Int, val description: String, val applied: Boolean)

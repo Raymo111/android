@@ -24,7 +24,7 @@ package com.owncloud.android.ui.asynctasks;
 import android.accounts.Account;
 import android.os.AsyncTask;
 
-import li.raymond.raymocloud.account.User;
+import com.nextcloud.client.account.User;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.operations.RichDocumentsUrlOperation;

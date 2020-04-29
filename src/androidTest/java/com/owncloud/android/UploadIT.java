@@ -3,10 +3,10 @@ package com.owncloud.android;
 import android.content.ContentResolver;
 
 import com.evernote.android.job.JobRequest;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.account.UserAccountManagerImpl;
-import li.raymond.raymocloud.device.PowerManagementService;
-import li.raymond.raymocloud.network.ConnectivityService;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.account.UserAccountManagerImpl;
+import com.nextcloud.client.device.PowerManagementService;
+import com.nextcloud.client.network.ConnectivityService;
 import com.owncloud.android.datamodel.UploadsStorageManager;
 import com.owncloud.android.db.OCUpload;
 import com.owncloud.android.files.services.FileUploader;

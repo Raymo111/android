@@ -21,7 +21,7 @@
  *
  */
 
-package li.raymond.raymocloud.network;
+package com.nextcloud.client.network;
 
 import com.owncloud.android.lib.common.OwnCloudClientManagerFactory;
 

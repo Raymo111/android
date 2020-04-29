@@ -19,7 +19,7 @@
  * You should have received a copy of the GNU Affero General Public
  * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.jobs
+package com.nextcloud.client.jobs
 
 import android.content.ContentResolver
 import android.content.Context
@@ -28,10 +28,10 @@ import android.os.PowerManager
 import android.os.PowerManager.WakeLock
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import li.raymond.raymocloud.account.User
-import li.raymond.raymocloud.account.UserAccountManager
-import li.raymond.raymocloud.device.PowerManagementService
-import li.raymond.raymocloud.network.ConnectivityService
+import com.nextcloud.client.account.User
+import com.nextcloud.client.account.UserAccountManager
+import com.nextcloud.client.device.PowerManagementService
+import com.nextcloud.client.network.ConnectivityService
 import com.owncloud.android.MainApp
 import com.owncloud.android.datamodel.FileDataStorageManager
 import com.owncloud.android.datamodel.OCFile

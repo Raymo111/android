@@ -40,9 +40,9 @@ import android.view.MenuItem;
 
 import com.evernote.android.job.JobRequest;
 import com.evernote.android.job.util.support.PersistableBundleCompat;
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.onboarding.FirstRunActivity;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.onboarding.FirstRunActivity;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;

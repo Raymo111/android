@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.etm
+package com.nextcloud.client.etm
 
 import android.content.Context
 import android.content.Intent
@@ -25,8 +25,8 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import li.raymond.raymocloud.di.Injectable
-import li.raymond.raymocloud.di.ViewModelFactory
+import com.nextcloud.client.di.Injectable
+import com.nextcloud.client.di.ViewModelFactory
 import com.owncloud.android.R
 import com.owncloud.android.ui.activity.ToolbarActivity
 import javax.inject.Inject

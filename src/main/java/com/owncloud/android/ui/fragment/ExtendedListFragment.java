@@ -55,10 +55,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.di.Injectable;
-import li.raymond.raymocloud.preferences.AppPreferences;
-import li.raymond.raymocloud.preferences.AppPreferencesImpl;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.di.Injectable;
+import com.nextcloud.client.preferences.AppPreferences;
+import com.nextcloud.client.preferences.AppPreferencesImpl;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.lib.common.utils.Log_OC;

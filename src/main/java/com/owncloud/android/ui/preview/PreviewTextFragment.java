@@ -37,9 +37,9 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.device.DeviceInfo;
-import li.raymond.raymocloud.di.Injectable;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.device.DeviceInfo;
+import com.nextcloud.client.di.Injectable;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.utils.Log_OC;

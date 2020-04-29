@@ -18,16 +18,16 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.di;
+package com.nextcloud.client.di;
 
 import android.app.Application;
 
-import li.raymond.raymocloud.appinfo.AppInfoModule;
-import li.raymond.raymocloud.device.DeviceModule;
-import li.raymond.raymocloud.jobs.JobsModule;
-import li.raymond.raymocloud.network.NetworkModule;
-import li.raymond.raymocloud.onboarding.OnboardingModule;
-import li.raymond.raymocloud.preferences.PreferencesModule;
+import com.nextcloud.client.appinfo.AppInfoModule;
+import com.nextcloud.client.device.DeviceModule;
+import com.nextcloud.client.jobs.JobsModule;
+import com.nextcloud.client.network.NetworkModule;
+import com.nextcloud.client.onboarding.OnboardingModule;
+import com.nextcloud.client.preferences.PreferencesModule;
 import com.owncloud.android.MainApp;
 
 import javax.inject.Singleton;

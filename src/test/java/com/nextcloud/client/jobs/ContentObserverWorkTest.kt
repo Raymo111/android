@@ -18,12 +18,12 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.jobs
+package com.nextcloud.client.jobs
 
 import android.content.Context
 import android.net.Uri
 import androidx.work.WorkerParameters
-import li.raymond.raymocloud.device.PowerManagementService
+import com.nextcloud.client.device.PowerManagementService
 import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
 import com.owncloud.android.datamodel.SyncedFolderProvider

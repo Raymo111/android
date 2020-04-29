@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.logger
+package com.nextcloud.client.logger
 
 typealias OnLogsLoaded = (entries: List<LogEntry>, totalLogSize: Long) -> Unit
 

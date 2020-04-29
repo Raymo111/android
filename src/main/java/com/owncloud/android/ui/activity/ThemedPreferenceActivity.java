@@ -23,8 +23,8 @@ package com.owncloud.android.ui.activity;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-import li.raymond.raymocloud.preferences.AppPreferences;
-import li.raymond.raymocloud.preferences.DarkMode;
+import com.nextcloud.client.preferences.AppPreferences;
+import com.nextcloud.client.preferences.DarkMode;
 
 import javax.inject.Inject;
 

@@ -24,10 +24,10 @@ import android.text.TextUtils;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.jobs.BackgroundJobManager;
-import li.raymond.raymocloud.jobs.NotificationWork;
-import li.raymond.raymocloud.preferences.AppPreferences;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.jobs.BackgroundJobManager;
+import com.nextcloud.client.jobs.NotificationWork;
+import com.nextcloud.client.preferences.AppPreferences;
 import com.owncloud.android.R;
 import com.owncloud.android.utils.PushUtils;
 

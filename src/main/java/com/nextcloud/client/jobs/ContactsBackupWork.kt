@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.jobs
+package com.nextcloud.client.jobs
 
 import android.content.ComponentName
 import android.content.ContentResolver
@@ -33,8 +33,8 @@ import android.text.TextUtils
 import android.text.format.DateFormat
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import li.raymond.raymocloud.account.User
-import li.raymond.raymocloud.account.UserAccountManager
+import com.nextcloud.client.account.User
+import com.nextcloud.client.account.UserAccountManager
 import com.owncloud.android.R
 import com.owncloud.android.datamodel.ArbitraryDataProvider
 import com.owncloud.android.datamodel.FileDataStorageManager

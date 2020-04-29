@@ -23,7 +23,7 @@
 
     <data>
         <import type="android.view.View" />
-        <variable name="vm" type="li.raymond.raymocloud.logger.ui.LogsViewModel" />
+        <variable name="vm" type="com.nextcloud.client.logger.ui.LogsViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

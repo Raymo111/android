@@ -17,13 +17,13 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.jobs
+package com.nextcloud.client.jobs
 
 import android.content.Context
 import android.content.ContextWrapper
 import androidx.work.Configuration
 import androidx.work.WorkManager
-import li.raymond.raymocloud.core.Clock
+import com.nextcloud.client.core.Clock
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

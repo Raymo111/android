@@ -27,7 +27,7 @@ import android.accounts.Account;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import li.raymond.raymocloud.account.UserAccountManager;
+import com.nextcloud.client.account.UserAccountManager;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.datamodel.UploadsStorageManager;
 import com.owncloud.android.datamodel.UploadsStorageManager.UploadStatus;

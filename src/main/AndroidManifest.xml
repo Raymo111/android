@@ -98,7 +98,8 @@
         android:manageSpaceActivity="com.owncloud.android.ui.activity.ManageSpaceActivity"
         android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
-        tools:ignore="UnusedAttribute">
+        tools:ignore="UnusedAttribute"
+        tools:replace="android:label">
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -141,8 +142,8 @@
         <activity android:name=".ui.activities.ActivitiesActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity android:name=".ui.activity.SyncedFoldersActivity"/>
-        <receiver android:name="li.raymond.raymocloud.jobs.MediaFoldersDetectionWork$NotificationReceiver" />
-        <receiver android:name="li.raymond.raymocloud.jobs.NotificationWork$NotificationReceiver" />
+        <receiver android:name="com.nextcloud.client.jobs.MediaFoldersDetectionWork$NotificationReceiver" />
+        <receiver android:name="com.nextcloud.client.jobs.NotificationWork$NotificationReceiver" />
         <activity android:name=".ui.activity.UploadFilesActivity" />
         <activity android:name=".ui.activity.ExternalSiteWebView"
                   android:configChanges="orientation|screenSize|keyboardHidden" />
@@ -328,7 +329,7 @@
         <service android:name=".services.OperationsService" />
         <service android:name=".files.services.FileDownloader" />
         <service android:name=".files.services.FileUploader" />
-        <service android:name="li.raymond.raymocloud.media.PlayerService"/>
+        <service android:name="com.nextcloud.client.media.PlayerService"/>
 
         <activity
             android:name=".ui.activity.PassCodeActivity"
@@ -339,9 +340,9 @@
         <activity android:name=".ui.activity.ConflictsResolveActivity"/>
         <activity android:name=".ui.activity.ErrorsWhileCopyingHandlerActivity"/>
 
-        <activity android:name="li.raymond.raymocloud.logger.ui.LogsActivity" />
+        <activity android:name="com.nextcloud.client.logger.ui.LogsActivity" />
 
-        <activity android:name="li.raymond.raymocloud.errorhandling.ShowErrorActivity"
+        <activity android:name="com.nextcloud.client.errorhandling.ShowErrorActivity"
             android:theme="@style/Theme.ownCloud.Toolbar"
             android:process=":crash"
             android:excludeFromRecents="true"
@@ -351,10 +352,10 @@
         <activity
             android:name=".ui.trashbin.TrashbinActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"/>
-        <activity android:name="li.raymond.raymocloud.onboarding.WhatsNewActivity"
+        <activity android:name="com.nextcloud.client.onboarding.WhatsNewActivity"
                   android:theme="@style/Theme.ownCloud.noActionBar.Login" />
         <activity
-            android:name="li.raymond.raymocloud.onboarding.FirstRunActivity"
+            android:name="com.nextcloud.client.onboarding.FirstRunActivity"
             android:theme="@style/Theme.ownCloud.noActionBar.Login"
             android:configChanges="orientation|screenSize"/>
 
@@ -411,7 +412,7 @@
             android:theme="@style/Theme.ownCloud.Dialog.NoTitle" />
 
         <activity
-            android:name="li.raymond.raymocloud.etm.EtmActivity"
+            android:name="com.nextcloud.client.etm.EtmActivity"
             android:theme="@style/Theme.ownCloud.Toolbar"/>
     </application>
 

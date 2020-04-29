@@ -18,15 +18,15 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.network;
+package com.nextcloud.client.network;
 
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
 import com.evernote.android.job.JobRequest;
-import li.raymond.raymocloud.account.Server;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.logger.Logger;
+import com.nextcloud.client.account.Server;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.logger.Logger;
 import com.owncloud.android.lib.resources.status.OwnCloudVersion;
 
 import org.apache.commons.httpclient.HttpClient;

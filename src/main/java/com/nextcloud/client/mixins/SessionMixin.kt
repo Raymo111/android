@@ -18,15 +18,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.mixins
+package com.nextcloud.client.mixins
 
 import android.accounts.Account
 import android.app.Activity
 import android.content.ContentResolver
 import android.content.Intent
 import android.os.Bundle
-import li.raymond.raymocloud.account.User
-import li.raymond.raymocloud.account.UserAccountManager
+import com.nextcloud.client.account.User
+import com.nextcloud.client.account.UserAccountManager
 import com.nextcloud.java.util.Optional
 import com.owncloud.android.datamodel.FileDataStorageManager
 import com.owncloud.android.lib.resources.status.OCCapability

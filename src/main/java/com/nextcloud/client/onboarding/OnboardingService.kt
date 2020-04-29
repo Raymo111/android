@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.onboarding
+package com.nextcloud.client.onboarding
 
 import android.app.Activity
 import android.content.Context

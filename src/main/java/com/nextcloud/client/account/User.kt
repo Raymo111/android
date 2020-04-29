@@ -18,7 +18,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.account
+package com.nextcloud.client.account
 
 import android.accounts.Account
 import android.os.Parcelable

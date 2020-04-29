@@ -24,7 +24,7 @@ import android.content.Intent;
 import android.os.IBinder;
 
 import com.nextcloud.android.sso.InputStreamBinder;
-import li.raymond.raymocloud.account.UserAccountManager;
+import com.nextcloud.client.account.UserAccountManager;
 
 import javax.inject.Inject;
 

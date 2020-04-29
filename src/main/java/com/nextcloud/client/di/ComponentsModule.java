@@ -18,14 +18,14 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.di;
+package com.nextcloud.client.di;
 
-import li.raymond.raymocloud.etm.EtmActivity;
-import li.raymond.raymocloud.jobs.NotificationWork;
-import li.raymond.raymocloud.logger.ui.LogsActivity;
-import li.raymond.raymocloud.media.PlayerService;
-import li.raymond.raymocloud.onboarding.FirstRunActivity;
-import li.raymond.raymocloud.onboarding.WhatsNewActivity;
+import com.nextcloud.client.etm.EtmActivity;
+import com.nextcloud.client.jobs.NotificationWork;
+import com.nextcloud.client.logger.ui.LogsActivity;
+import com.nextcloud.client.media.PlayerService;
+import com.nextcloud.client.onboarding.FirstRunActivity;
+import com.nextcloud.client.onboarding.WhatsNewActivity;
 import com.owncloud.android.authentication.AuthenticatorActivity;
 import com.owncloud.android.authentication.DeepLinkLoginActivity;
 import com.owncloud.android.files.BootupBroadcastReceiver;

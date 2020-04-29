@@ -18,7 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.network;
+package com.nextcloud.client.network;
 
 import android.accounts.Account;
 import android.accounts.AuthenticatorException;
@@ -27,7 +27,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
 
-import li.raymond.raymocloud.account.User;
+import com.nextcloud.client.account.User;
 import com.nextcloud.common.NextcloudClient;
 import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.OwnCloudClientFactory;

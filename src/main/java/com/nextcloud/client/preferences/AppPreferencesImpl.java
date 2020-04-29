@@ -19,15 +19,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.preferences;
+package com.nextcloud.client.preferences;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import li.raymond.raymocloud.account.CurrentAccountProvider;
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.account.UserAccountManagerImpl;
+import com.nextcloud.client.account.CurrentAccountProvider;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.account.UserAccountManagerImpl;
 import com.owncloud.android.datamodel.ArbitraryDataProvider;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.OCFile;
@@ -95,7 +95,7 @@ public final class AppPreferencesImpl implements AppPreferences {
 
     /**
      * Adapter delegating raw {@link SharedPreferences.OnSharedPreferenceChangeListener} calls
-     * with key-value pairs to respective {@link li.raymond.raymocloud.preferences.AppPreferences.Listener} method.
+     * with key-value pairs to respective {@link com.nextcloud.client.preferences.AppPreferences.Listener} method.
      */
     static class ListenerRegistry implements SharedPreferences.OnSharedPreferenceChangeListener {
         private final AppPreferences preferences;

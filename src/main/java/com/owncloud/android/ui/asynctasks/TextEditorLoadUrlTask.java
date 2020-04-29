@@ -24,7 +24,7 @@ import android.accounts.Account;
 import android.os.AsyncTask;
 
 import com.nextcloud.android.lib.resources.directediting.DirectEditingOpenFileRemoteOperation;
-import li.raymond.raymocloud.account.User;
+import com.nextcloud.client.account.User;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.files.FileMenuFilter;
 import com.owncloud.android.lib.common.Editor;

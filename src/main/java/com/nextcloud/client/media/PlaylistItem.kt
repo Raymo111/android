@@ -1,4 +1,4 @@
-package li.raymond.raymocloud.media
+package com.nextcloud.client.media
 
 import android.accounts.Account
 import com.owncloud.android.datamodel.OCFile

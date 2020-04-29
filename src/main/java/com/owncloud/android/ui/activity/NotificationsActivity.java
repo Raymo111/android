@@ -36,10 +36,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.jobs.NotificationWork;
-import li.raymond.raymocloud.network.ClientFactory;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.jobs.NotificationWork;
+import com.nextcloud.client.network.ClientFactory;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.ArbitraryDataProvider;

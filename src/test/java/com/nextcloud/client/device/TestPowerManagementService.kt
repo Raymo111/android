@@ -19,14 +19,14 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.device
+package com.nextcloud.client.device
 
 import android.content.Context
 import android.content.Intent
 import android.os.BatteryManager
 import android.os.Build
 import android.os.PowerManager
-import li.raymond.raymocloud.preferences.AppPreferences
+import com.nextcloud.client.preferences.AppPreferences
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.anyOrNull
 import com.nhaarman.mockitokotlin2.eq

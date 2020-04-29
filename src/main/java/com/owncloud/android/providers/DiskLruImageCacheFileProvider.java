@@ -30,8 +30,8 @@ import android.net.Uri;
 import android.os.ParcelFileDescriptor;
 import android.provider.OpenableColumns;
 
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.account.UserAccountManager;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.account.UserAccountManager;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.OCFile;

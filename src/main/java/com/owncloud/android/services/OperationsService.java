@@ -37,8 +37,8 @@ import android.os.Process;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import li.raymond.raymocloud.account.User;
-import li.raymond.raymocloud.account.UserAccountManager;
+import com.nextcloud.client.account.User;
+import com.nextcloud.client.account.UserAccountManager;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.datamodel.FileDataStorageManager;

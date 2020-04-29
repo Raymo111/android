@@ -19,7 +19,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package li.raymond.raymocloud.device
+package com.nextcloud.client.device
 
 /**
  * This service provides all device power management

@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.migrations
+package com.nextcloud.client.migrations
 
 class MigrationError(val id: Int, message: String, cause: Throwable?) : RuntimeException(message, cause) {
     constructor(id: Int, message: String) : this(id, message, null)

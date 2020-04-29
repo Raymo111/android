@@ -264,7 +264,7 @@ Source code of app:
   -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest```
 - run multiple test classes:
   -   separate by ","
-  - ```./gradlew createGplayDebugCoverageReport -Pcoverage=true -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest,li.raymond.raymocloud.FileDisplayActivityIT```
+  - ```./gradlew createGplayDebugCoverageReport -Pcoverage=true -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest,com.nextcloud.client.FileDisplayActivityIT```
 - run one test in class: ```./gradlew createGplayDebugCoverageReport -Pcoverage=true
   -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest#saveNewFile```
 - JaCoCo results are shown as html: firefox ./build/reports/coverage/gplay/debug/index.html

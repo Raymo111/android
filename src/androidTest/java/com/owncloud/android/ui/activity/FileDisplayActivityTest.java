@@ -2,7 +2,7 @@ package com.owncloud.android.ui.activity;
 
 import android.app.Activity;
 
-import li.raymond.raymocloud.onboarding.WhatsNewActivity;
+import com.nextcloud.client.onboarding.WhatsNewActivity;
 import com.owncloud.android.AbstractIT;
 
 import org.junit.Rule;

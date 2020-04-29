@@ -29,9 +29,9 @@ import android.text.TextUtils;
 
 import com.evernote.android.job.Job;
 import com.evernote.android.job.JobCreator;
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.core.Clock;
-import li.raymond.raymocloud.jobs.BackgroundJobManager;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.core.Clock;
+import com.nextcloud.client.jobs.BackgroundJobManager;
 import com.owncloud.android.datamodel.UploadsStorageManager;
 
 import org.greenrobot.eventbus.EventBus;

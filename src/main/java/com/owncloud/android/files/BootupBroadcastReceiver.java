@@ -27,12 +27,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import li.raymond.raymocloud.account.UserAccountManager;
-import li.raymond.raymocloud.core.Clock;
-import li.raymond.raymocloud.device.PowerManagementService;
-import li.raymond.raymocloud.jobs.BackgroundJobManager;
-import li.raymond.raymocloud.network.ConnectivityService;
-import li.raymond.raymocloud.preferences.AppPreferences;
+import com.nextcloud.client.account.UserAccountManager;
+import com.nextcloud.client.core.Clock;
+import com.nextcloud.client.device.PowerManagementService;
+import com.nextcloud.client.jobs.BackgroundJobManager;
+import com.nextcloud.client.network.ConnectivityService;
+import com.nextcloud.client.preferences.AppPreferences;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.datamodel.UploadsStorageManager;
 import com.owncloud.android.lib.common.utils.Log_OC;

@@ -18,7 +18,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.mixins
+package com.nextcloud.client.mixins
 
 import android.os.Bundle
 import com.nhaarman.mockitokotlin2.mock

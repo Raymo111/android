@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package li.raymond.raymocloud.onboarding
+package com.nextcloud.client.onboarding
 
 import android.content.res.Resources
-import li.raymond.raymocloud.account.CurrentAccountProvider
-import li.raymond.raymocloud.preferences.AppPreferences
+import com.nextcloud.client.account.CurrentAccountProvider
+import com.nextcloud.client.preferences.AppPreferences
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
