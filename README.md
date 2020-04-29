@@ -1,8 +1,8 @@
 # Raymocloud Android app :iphone:
 
-**The Android client for Raymocloud. Forked from [nextcloud/android](https://github.com/nextcloud/android)**
+**The Android client for Raymocloud. Forked from [nextcloud/android](https://github.com/nextcloud/android).**
 
-![App screenshots](/doc/Nextcloud_Android_Screenshots.png "App screenshots")
+![App screenshots](/doc/Raymocloud_Android_Screenshots.png "App screenshots")
 
 ### Getting debug info via logcat :mag:
 #### With a computer:
