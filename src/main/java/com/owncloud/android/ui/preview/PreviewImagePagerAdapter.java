@@ -24,7 +24,7 @@ import android.graphics.Matrix;
 import android.util.SparseArray;
 import android.view.ViewGroup;
 
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.datamodel.VirtualFolderType;

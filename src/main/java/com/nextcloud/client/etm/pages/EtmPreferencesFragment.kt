@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.etm.pages
+package li.raymond.raymocloud.etm.pages
 
 import android.content.Intent
 import android.os.Bundle
@@ -27,7 +27,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import com.nextcloud.client.etm.EtmBaseFragment
+import li.raymond.raymocloud.etm.EtmBaseFragment
 import com.owncloud.android.R
 import kotlinx.android.synthetic.main.fragment_etm_preferences.*
 

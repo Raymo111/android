@@ -1,4 +1,4 @@
-# Package com.nextcloud.client.mixins
+# Package li.raymond.raymocloud.mixins
 
 This package provides utilities and interfaces 
 allowing implementation of UI logic as mix-ins.

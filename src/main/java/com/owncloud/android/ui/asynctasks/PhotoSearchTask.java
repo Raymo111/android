@@ -23,7 +23,7 @@ package com.owncloud.android.ui.asynctasks;
 
 import android.os.AsyncTask;
 
-import com.nextcloud.client.account.User;
+import li.raymond.raymocloud.account.User;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;
 import com.owncloud.android.lib.common.utils.Log_OC;

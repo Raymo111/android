@@ -18,7 +18,7 @@
  * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.account;
+package li.raymond.raymocloud.account;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

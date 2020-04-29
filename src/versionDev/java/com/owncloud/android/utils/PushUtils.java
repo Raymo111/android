@@ -24,10 +24,10 @@ package com.owncloud.android.utils;
 
 import android.content.Context;
 
-import com.nextcloud.client.account.UserAccountManager;
+import li.raymond.raymocloud.account.UserAccountManager;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.datamodel.SignatureVerification;
-import com.nextcloud.client.preferences.AppPreferencesImpl;
+import li.raymond.raymocloud.preferences.AppPreferencesImpl;
 
 import java.security.Key;
 

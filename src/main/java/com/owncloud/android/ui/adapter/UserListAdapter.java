@@ -35,8 +35,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.account.UserAccountManager;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.account.UserAccountManager;
 import com.owncloud.android.R;
 import com.owncloud.android.lib.common.OwnCloudAccount;
 import com.owncloud.android.lib.common.utils.Log_OC;

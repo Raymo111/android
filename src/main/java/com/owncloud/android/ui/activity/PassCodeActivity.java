@@ -38,9 +38,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.preferences.AppPreferences;
-import com.nextcloud.client.preferences.AppPreferencesImpl;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferencesImpl;
 import com.owncloud.android.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.utils.ThemeUtils;

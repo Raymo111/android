@@ -52,12 +52,12 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.appinfo.AppInfo;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.media.PlayerServiceConnection;
-import com.nextcloud.client.network.ConnectivityService;
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.appinfo.AppInfo;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.media.PlayerServiceConnection;
+import li.raymond.raymocloud.network.ConnectivityService;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;

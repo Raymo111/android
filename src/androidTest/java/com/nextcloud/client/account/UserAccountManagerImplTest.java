@@ -1,11 +1,11 @@
-package com.nextcloud.client.account;
+package li.raymond.raymocloud.account;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.os.Bundle;
 
-import com.nextcloud.client.preferences.AppPreferences;
-import com.nextcloud.client.preferences.AppPreferencesImpl;
+import li.raymond.raymocloud.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferencesImpl;
 import com.owncloud.android.AbstractIT;
 import com.owncloud.android.lib.common.accounts.AccountUtils;
 

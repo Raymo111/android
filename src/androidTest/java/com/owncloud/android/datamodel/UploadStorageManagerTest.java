@@ -4,7 +4,7 @@ import android.accounts.Account;
 import android.content.ContentResolver;
 import android.content.Context;
 
-import com.nextcloud.client.account.CurrentAccountProvider;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
 import com.owncloud.android.db.OCUpload;
 
 import org.junit.After;

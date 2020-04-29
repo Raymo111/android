@@ -17,11 +17,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.logger
+package li.raymond.raymocloud.logger
 
 import android.os.Handler
-import com.nextcloud.client.core.Clock
-import com.nextcloud.client.core.ClockImpl
+import li.raymond.raymocloud.core.Clock
+import li.raymond.raymocloud.core.ClockImpl
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.argThat
 import com.nhaarman.mockitokotlin2.capture

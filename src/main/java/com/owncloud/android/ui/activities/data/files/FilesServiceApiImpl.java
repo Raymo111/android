@@ -25,9 +25,9 @@ package com.owncloud.android.ui.activities.data.files;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.network.ClientFactory;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.network.ClientFactory;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;

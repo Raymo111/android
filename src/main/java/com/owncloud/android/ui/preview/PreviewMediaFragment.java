@@ -52,11 +52,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.device.DeviceInfo;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.media.ErrorFormat;
-import com.nextcloud.client.media.PlayerServiceConnection;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.device.DeviceInfo;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.media.ErrorFormat;
+import li.raymond.raymocloud.media.PlayerServiceConnection;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.files.FileMenuFilter;

@@ -18,7 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.network;
+package li.raymond.raymocloud.network;
 
 import com.evernote.android.job.JobRequest;
 

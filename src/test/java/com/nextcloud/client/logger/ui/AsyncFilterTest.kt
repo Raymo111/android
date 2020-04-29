@@ -17,9 +17,9 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.logger.ui
+package li.raymond.raymocloud.logger.ui
 
-import com.nextcloud.client.core.ManualAsyncRunner
+import li.raymond.raymocloud.core.ManualAsyncRunner
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.never

@@ -19,7 +19,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.utils
+package li.raymond.raymocloud.utils
 
 import com.owncloud.android.utils.FileStorageUtils
 import org.junit.Assert.assertEquals

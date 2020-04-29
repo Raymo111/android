@@ -17,13 +17,13 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.migrations
+package li.raymond.raymocloud.migrations
 
 import android.os.Build
 import androidx.work.WorkManager
-import com.nextcloud.client.account.UserAccountManager
-import com.nextcloud.client.jobs.BackgroundJobManager
-import com.nextcloud.client.logger.Logger
+import li.raymond.raymocloud.account.UserAccountManager
+import li.raymond.raymocloud.jobs.BackgroundJobManager
+import li.raymond.raymocloud.logger.Logger
 import com.owncloud.android.datamodel.ArbitraryDataProvider
 import com.owncloud.android.ui.activity.ContactsPreferenceActivity
 import javax.inject.Inject

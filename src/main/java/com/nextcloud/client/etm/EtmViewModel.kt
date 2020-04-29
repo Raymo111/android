@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.etm
+package li.raymond.raymocloud.etm
 
 import android.accounts.Account
 import android.accounts.AccountManager
@@ -26,15 +26,15 @@ import android.content.res.Resources
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.nextcloud.client.etm.pages.EtmAccountsFragment
-import com.nextcloud.client.etm.pages.EtmBackgroundJobsFragment
-import com.nextcloud.client.etm.pages.EtmMigrations
-import com.nextcloud.client.etm.pages.EtmPreferencesFragment
-import com.nextcloud.client.jobs.BackgroundJobManager
-import com.nextcloud.client.jobs.JobInfo
-import com.nextcloud.client.migrations.MigrationInfo
-import com.nextcloud.client.migrations.MigrationsDb
-import com.nextcloud.client.migrations.MigrationsManager
+import li.raymond.raymocloud.etm.pages.EtmAccountsFragment
+import li.raymond.raymocloud.etm.pages.EtmBackgroundJobsFragment
+import li.raymond.raymocloud.etm.pages.EtmMigrations
+import li.raymond.raymocloud.etm.pages.EtmPreferencesFragment
+import li.raymond.raymocloud.jobs.BackgroundJobManager
+import li.raymond.raymocloud.jobs.JobInfo
+import li.raymond.raymocloud.migrations.MigrationInfo
+import li.raymond.raymocloud.migrations.MigrationsDb
+import li.raymond.raymocloud.migrations.MigrationsManager
 import com.owncloud.android.R
 import com.owncloud.android.lib.common.accounts.AccountUtils
 import javax.inject.Inject

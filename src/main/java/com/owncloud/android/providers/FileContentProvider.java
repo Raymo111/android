@@ -42,7 +42,7 @@ import android.net.Uri;
 import android.os.Binder;
 import android.text.TextUtils;
 
-import com.nextcloud.client.core.Clock;
+import li.raymond.raymocloud.core.Clock;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;

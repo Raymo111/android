@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.core
+package li.raymond.raymocloud.core
 
 /**
  * Interface allowing cancellation of a running task.
@@ -26,7 +26,7 @@ package com.nextcloud.client.core
  * One trivial case would be a task finished and cancelled
  * before result delivery.
  *
- * @see [com.nextcloud.client.core.AsyncRunner]
+ * @see [li.raymond.raymocloud.core.AsyncRunner]
  */
 interface Cancellable {
 

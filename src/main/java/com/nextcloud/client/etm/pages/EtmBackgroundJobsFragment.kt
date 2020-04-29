@@ -18,7 +18,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.etm.pages
+package li.raymond.raymocloud.etm.pages
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -32,8 +32,8 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.nextcloud.client.etm.EtmBaseFragment
-import com.nextcloud.client.jobs.JobInfo
+import li.raymond.raymocloud.etm.EtmBaseFragment
+import li.raymond.raymocloud.jobs.JobInfo
 import com.owncloud.android.R
 import java.text.SimpleDateFormat
 import java.util.Locale

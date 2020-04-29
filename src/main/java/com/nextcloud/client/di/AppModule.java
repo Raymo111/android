@@ -18,7 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.di;
+package li.raymond.raymocloud.di;
 
 import android.accounts.AccountManager;
 import android.app.Application;
@@ -30,24 +30,24 @@ import android.content.res.Resources;
 import android.media.AudioManager;
 import android.os.Handler;
 
-import com.nextcloud.client.account.CurrentAccountProvider;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.account.UserAccountManagerImpl;
-import com.nextcloud.client.appinfo.AppInfo;
-import com.nextcloud.client.core.AsyncRunner;
-import com.nextcloud.client.core.Clock;
-import com.nextcloud.client.core.ClockImpl;
-import com.nextcloud.client.core.ThreadPoolAsyncRunner;
-import com.nextcloud.client.device.DeviceInfo;
-import com.nextcloud.client.logger.FileLogHandler;
-import com.nextcloud.client.logger.Logger;
-import com.nextcloud.client.logger.LoggerImpl;
-import com.nextcloud.client.logger.LogsRepository;
-import com.nextcloud.client.migrations.Migrations;
-import com.nextcloud.client.migrations.MigrationsDb;
-import com.nextcloud.client.migrations.MigrationsManager;
-import com.nextcloud.client.migrations.MigrationsManagerImpl;
-import com.nextcloud.client.network.ClientFactory;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.account.UserAccountManagerImpl;
+import li.raymond.raymocloud.appinfo.AppInfo;
+import li.raymond.raymocloud.core.AsyncRunner;
+import li.raymond.raymocloud.core.Clock;
+import li.raymond.raymocloud.core.ClockImpl;
+import li.raymond.raymocloud.core.ThreadPoolAsyncRunner;
+import li.raymond.raymocloud.device.DeviceInfo;
+import li.raymond.raymocloud.logger.FileLogHandler;
+import li.raymond.raymocloud.logger.Logger;
+import li.raymond.raymocloud.logger.LoggerImpl;
+import li.raymond.raymocloud.logger.LogsRepository;
+import li.raymond.raymocloud.migrations.Migrations;
+import li.raymond.raymocloud.migrations.MigrationsDb;
+import li.raymond.raymocloud.migrations.MigrationsManager;
+import li.raymond.raymocloud.migrations.MigrationsManagerImpl;
+import li.raymond.raymocloud.network.ClientFactory;
 import com.owncloud.android.datamodel.ArbitraryDataProvider;
 import com.owncloud.android.datamodel.UploadsStorageManager;
 import com.owncloud.android.ui.activities.data.activities.ActivitiesRepository;

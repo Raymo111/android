@@ -33,8 +33,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.nextcloud.client.account.CurrentAccountProvider;
-import com.nextcloud.client.network.ClientFactory;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
+import li.raymond.raymocloud.network.ClientFactory;
 import com.owncloud.android.R;
 import com.owncloud.android.lib.common.Template;
 import com.owncloud.android.lib.common.TemplateList;

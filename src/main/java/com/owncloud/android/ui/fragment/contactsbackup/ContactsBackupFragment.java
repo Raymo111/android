@@ -38,9 +38,9 @@ import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.jobs.BackgroundJobManager;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.jobs.BackgroundJobManager;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.ArbitraryDataProvider;

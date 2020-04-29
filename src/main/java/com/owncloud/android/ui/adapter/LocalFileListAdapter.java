@@ -30,7 +30,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.ThumbnailsCacheManager;
 import com.owncloud.android.lib.common.utils.Log_OC;

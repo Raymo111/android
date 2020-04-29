@@ -264,7 +264,7 @@ Source code of app:
   -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest```
 - run multiple test classes:
   -   separate by ","
-  - ```./gradlew createGplayDebugCoverageReport -Pcoverage=true -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest,com.nextcloud.client.FileDisplayActivityIT```
+  - ```./gradlew createGplayDebugCoverageReport -Pcoverage=true -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest,li.raymond.raymocloud.FileDisplayActivityIT```
 - run one test in class: ```./gradlew createGplayDebugCoverageReport -Pcoverage=true
   -Pandroid.testInstrumentationRunnerArguments.class=com.owncloud.android.datamodel.FileDataStorageManagerTest#saveNewFile```
 - JaCoCo results are shown as html: firefox ./build/reports/coverage/gplay/debug/index.html
@@ -406,7 +406,7 @@ and thereof we'd ask contributors to be mindful of their code testability:
 # Releases
 At the moment we are releasing the app in two app stores:
 
-* [Google Play Store](https://play.google.com/store/apps/details?id=com.nextcloud.client)
+* [Google Play Store](https://play.google.com/store/apps/details?id=li.raymond.raymocloud)
 * [f-droid](https://f-droid.org/repository/browse/?fdfilter=com.nextcloud)
 
 

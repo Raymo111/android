@@ -25,7 +25,7 @@
  *
  */
 
-package com.nextcloud.client.account;
+package li.raymond.raymocloud.account;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

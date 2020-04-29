@@ -37,10 +37,10 @@ import android.view.Window;
 import android.view.WindowManager.LayoutParams;
 import android.widget.EditText;
 
-import com.nextcloud.client.account.CurrentAccountProvider;
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.network.ClientFactory;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.network.ClientFactory;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;

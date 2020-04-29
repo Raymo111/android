@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.jobs
+package li.raymond.raymocloud.jobs
 
 import android.os.Build
 import android.provider.MediaStore
@@ -35,8 +35,8 @@ import androidx.work.Operation
 import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
-import com.nextcloud.client.account.User
-import com.nextcloud.client.core.Clock
+import li.raymond.raymocloud.account.User
+import li.raymond.raymocloud.core.Clock
 import java.util.Date
 import java.util.UUID
 import java.util.concurrent.TimeUnit

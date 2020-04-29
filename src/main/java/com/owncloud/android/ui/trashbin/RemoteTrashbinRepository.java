@@ -25,8 +25,8 @@ package com.owncloud.android.ui.trashbin;
 
 import android.os.AsyncTask;
 
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.network.ClientFactory;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.network.ClientFactory;
 import com.owncloud.android.R;
 import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;

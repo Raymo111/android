@@ -27,9 +27,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 
-import com.nextcloud.client.core.Clock;
-import com.nextcloud.client.preferences.AppPreferences;
-import com.nextcloud.client.preferences.AppPreferencesImpl;
+import li.raymond.raymocloud.core.Clock;
+import li.raymond.raymocloud.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferencesImpl;
 import com.owncloud.android.db.ProviderMeta;
 import com.owncloud.android.lib.common.utils.Log_OC;
 

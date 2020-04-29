@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.core
+package li.raymond.raymocloud.core
 
 import java.util.Date
 import java.util.TimeZone

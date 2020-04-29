@@ -44,11 +44,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.device.DeviceInfo;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.network.ConnectivityService;
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.device.DeviceInfo;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.network.ConnectivityService;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;

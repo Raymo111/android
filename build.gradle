@@ -104,7 +104,7 @@ spotbugs {
 }
 
 shot {
-    appId = 'com.nextcloud.client'
+    appId = 'li.raymond.raymocloud'
     instrumentationTestTask = 'connectedGplayDebugAndroidTest'
 }
 
@@ -133,7 +133,7 @@ android {
         targetSdkVersion 29
 
         // arguments to be passed to functional tests
-        testInstrumentationRunner "com.nextcloud.client.ScreenshotTestRunner"
+        testInstrumentationRunner "li.raymond.raymocloud.ScreenshotTestRunner"
         testInstrumentationRunnerArgument "TEST_SERVER_URL", "${NC_TEST_SERVER_BASEURL}"
         testInstrumentationRunnerArgument "TEST_SERVER_USERNAME", "${NC_TEST_SERVER_USERNAME}"
         testInstrumentationRunnerArgument "TEST_SERVER_PASSWORD", "${NC_TEST_SERVER_PASSWORD}"
@@ -165,12 +165,12 @@ android {
         productFlavors {
             // used for f-droid
             generic {
-                applicationId 'com.nextcloud.client'
+                applicationId 'li.raymond.raymocloud'
                 dimension "default"
             }
 
             gplay {
-                applicationId 'com.nextcloud.client'
+                applicationId 'li.raymond.raymocloud'
                 dimension "default"
             }
 

@@ -33,8 +33,8 @@ import android.os.Looper;
 import android.provider.BaseColumns;
 import android.widget.Toast;
 
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.account.UserAccountManager;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.account.UserAccountManager;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.lib.common.operations.RemoteOperationResult;

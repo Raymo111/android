@@ -18,7 +18,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.preferences;
+package li.raymond.raymocloud.preferences;
 
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.utils.FileSortOrder;

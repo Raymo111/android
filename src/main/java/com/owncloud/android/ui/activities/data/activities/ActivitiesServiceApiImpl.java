@@ -28,7 +28,7 @@ import android.accounts.OperationCanceledException;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.nextcloud.client.account.UserAccountManager;
+import li.raymond.raymocloud.account.UserAccountManager;
 import com.nextcloud.common.NextcloudClient;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;

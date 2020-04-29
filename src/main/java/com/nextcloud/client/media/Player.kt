@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.media
+package li.raymond.raymocloud.media
 
 import android.accounts.Account
 import android.content.Context
@@ -25,8 +25,8 @@ import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.PowerManager
 import android.widget.MediaController
-import com.nextcloud.client.media.PlayerStateMachine.Event
-import com.nextcloud.client.media.PlayerStateMachine.State
+import li.raymond.raymocloud.media.PlayerStateMachine.Event
+import li.raymond.raymocloud.media.PlayerStateMachine.State
 import com.owncloud.android.R
 import com.owncloud.android.datamodel.OCFile
 import com.owncloud.android.lib.common.OwnCloudAccount

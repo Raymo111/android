@@ -27,8 +27,8 @@ import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.nextcloud.client.appinfo.AppInfo
-import com.nextcloud.client.device.DeviceInfo
+import li.raymond.raymocloud.appinfo.AppInfo
+import li.raymond.raymocloud.device.DeviceInfo
 import com.owncloud.android.R
 import com.owncloud.android.files.FileMenuFilter
 import com.owncloud.android.ui.asynctasks.TextEditorLoadUrlTask

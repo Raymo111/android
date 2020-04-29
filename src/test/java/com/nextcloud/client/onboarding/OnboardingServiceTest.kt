@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.onboarding
+package li.raymond.raymocloud.onboarding
 
 import android.accounts.Account
 import android.content.res.Resources
-import com.nextcloud.client.account.CurrentAccountProvider
-import com.nextcloud.client.preferences.AppPreferences
+import li.raymond.raymocloud.account.CurrentAccountProvider
+import li.raymond.raymocloud.preferences.AppPreferences
 import com.nhaarman.mockitokotlin2.whenever
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

@@ -1,3 +1,3 @@
-package com.nextcloud.client.media
+package li.raymond.raymocloud.media
 
 data class PlayerError(val message: String)

@@ -28,8 +28,8 @@ import android.accounts.AccountManager;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.account.UserAccountManagerImpl;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.account.UserAccountManagerImpl;
 import com.owncloud.android.AbstractIT;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;

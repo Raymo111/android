@@ -39,8 +39,8 @@ import android.os.IBinder;
 import android.view.View;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.network.ConnectivityService;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.network.ConnectivityService;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.authentication.AuthenticatorActivity;

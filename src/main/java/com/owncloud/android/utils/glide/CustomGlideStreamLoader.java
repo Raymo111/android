@@ -24,8 +24,8 @@ package com.owncloud.android.utils.glide;
 
 import com.bumptech.glide.load.data.DataFetcher;
 import com.bumptech.glide.load.model.stream.StreamModelLoader;
-import com.nextcloud.client.account.CurrentAccountProvider;
-import com.nextcloud.client.network.ClientFactory;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
+import li.raymond.raymocloud.network.ClientFactory;
 
 import java.io.InputStream;
 

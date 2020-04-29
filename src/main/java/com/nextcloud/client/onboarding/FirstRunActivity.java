@@ -22,7 +22,7 @@
  * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.onboarding;
+package li.raymond.raymocloud.onboarding;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -36,10 +36,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.appinfo.AppInfo;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.appinfo.AppInfo;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.owncloud.android.BuildConfig;
 import com.owncloud.android.R;
 import com.owncloud.android.authentication.AuthenticatorActivity;

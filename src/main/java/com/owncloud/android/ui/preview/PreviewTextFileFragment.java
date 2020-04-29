@@ -33,7 +33,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.nextcloud.client.account.UserAccountManager;
+import li.raymond.raymocloud.account.UserAccountManager;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.files.FileMenuFilter;

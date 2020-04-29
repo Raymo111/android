@@ -23,13 +23,13 @@
  * <p>
  * To enable dependency injection for a component, such as {@link android.app.Activity},
  * {@link androidx.fragment.app.Fragment} or {@link android.app.Service}, the component must be
- * first registered in {@link com.nextcloud.client.di.ComponentsModule} class.
+ * first registered in {@link li.raymond.raymocloud.di.ComponentsModule} class.
  * <p>
- * {@link com.nextcloud.client.di.ComponentsModule} will be used by Dagger compiler to
+ * {@link li.raymond.raymocloud.di.ComponentsModule} will be used by Dagger compiler to
  * create an injector for a given class.
  *
- * @see com.nextcloud.client.di.InjectorNotFoundException
+ * @see li.raymond.raymocloud.di.InjectorNotFoundException
  * @see dagger.android.AndroidInjection
  * @see dagger.android.support.AndroidSupportInjection
  */
-package com.nextcloud.client.di;
+package li.raymond.raymocloud.di;

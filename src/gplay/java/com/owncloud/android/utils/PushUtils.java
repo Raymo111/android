@@ -33,9 +33,9 @@ import android.util.Base64;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.preferences.AppPreferences;
-import com.nextcloud.client.preferences.AppPreferencesImpl;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferencesImpl;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.ArbitraryDataProvider;

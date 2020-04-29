@@ -22,11 +22,11 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.device
+package li.raymond.raymocloud.device
 
 import android.content.Context
 import android.os.PowerManager
-import com.nextcloud.client.preferences.AppPreferences
+import li.raymond.raymocloud.preferences.AppPreferences
 import dagger.Module
 import dagger.Provides
 

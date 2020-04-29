@@ -41,8 +41,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.owncloud.android.R;
 import com.owncloud.android.files.services.FileUploader;
 import com.owncloud.android.lib.common.utils.Log_OC;

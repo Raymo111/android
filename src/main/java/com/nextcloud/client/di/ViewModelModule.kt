@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.di
+package li.raymond.raymocloud.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.nextcloud.client.etm.EtmViewModel
-import com.nextcloud.client.logger.ui.LogsViewModel
+import li.raymond.raymocloud.etm.EtmViewModel
+import li.raymond.raymocloud.logger.ui.LogsViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

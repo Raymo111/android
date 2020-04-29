@@ -47,11 +47,11 @@ import android.util.Log;
 import android.util.SparseArray;
 import android.widget.Toast;
 
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.account.UserAccountManagerImpl;
-import com.nextcloud.client.preferences.AppPreferences;
-import com.nextcloud.client.preferences.AppPreferencesImpl;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.account.UserAccountManagerImpl;
+import li.raymond.raymocloud.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferencesImpl;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.ArbitraryDataProvider;

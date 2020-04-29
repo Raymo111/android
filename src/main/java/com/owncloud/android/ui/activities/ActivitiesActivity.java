@@ -28,7 +28,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.nextcloud.client.network.ClientFactory;
+import li.raymond.raymocloud.network.ClientFactory;
 import com.nextcloud.common.NextcloudClient;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;

@@ -11,9 +11,9 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.facebook.testing.screenshot.Screenshot;
-import com.nextcloud.client.RetryTestRule;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.account.UserAccountManagerImpl;
+import li.raymond.raymocloud.RetryTestRule;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.account.UserAccountManagerImpl;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.lib.common.OwnCloudClient;
 import com.owncloud.android.lib.common.OwnCloudClientFactory;

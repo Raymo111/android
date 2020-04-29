@@ -49,9 +49,9 @@ import android.util.Pair;
 
 import com.evernote.android.job.JobRequest;
 import com.evernote.android.job.util.Device;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.device.PowerManagementService;
-import com.nextcloud.client.network.ConnectivityService;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.device.PowerManagementService;
+import li.raymond.raymocloud.network.ConnectivityService;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
 import com.owncloud.android.authentication.AuthenticatorActivity;

@@ -19,7 +19,7 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-package com.nextcloud.client.jobs
+package li.raymond.raymocloud.jobs
 
 import android.accounts.AuthenticatorException
 import android.accounts.OperationCanceledException
@@ -40,8 +40,8 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 import com.google.gson.Gson
-import com.nextcloud.client.account.User
-import com.nextcloud.client.account.UserAccountManager
+import li.raymond.raymocloud.account.User
+import li.raymond.raymocloud.account.UserAccountManager
 import com.owncloud.android.R
 import com.owncloud.android.datamodel.DecryptedPushMessage
 import com.owncloud.android.lib.common.OwnCloudClient

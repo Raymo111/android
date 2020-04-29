@@ -17,11 +17,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.migrations
+package li.raymond.raymocloud.migrations
 
 import androidx.test.annotation.UiThreadTest
-import com.nextcloud.client.appinfo.AppInfo
-import com.nextcloud.client.core.ManualAsyncRunner
+import li.raymond.raymocloud.appinfo.AppInfo
+import li.raymond.raymocloud.core.ManualAsyncRunner
 import com.nhaarman.mockitokotlin2.inOrder
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.never

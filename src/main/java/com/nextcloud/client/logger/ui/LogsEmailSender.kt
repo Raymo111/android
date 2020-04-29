@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.logger.ui
+package li.raymond.raymocloud.logger.ui
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -26,10 +26,10 @@ import android.net.Uri
 import android.os.Build
 import android.widget.Toast
 import androidx.core.content.FileProvider
-import com.nextcloud.client.core.AsyncRunner
-import com.nextcloud.client.core.Cancellable
-import com.nextcloud.client.core.Clock
-import com.nextcloud.client.logger.LogEntry
+import li.raymond.raymocloud.core.AsyncRunner
+import li.raymond.raymocloud.core.Cancellable
+import li.raymond.raymocloud.core.Clock
+import li.raymond.raymocloud.logger.LogEntry
 import com.owncloud.android.R
 import java.io.File
 import java.io.FileWriter

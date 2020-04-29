@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.migrations
+package li.raymond.raymocloud.migrations
 
 import androidx.annotation.MainThread
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.nextcloud.client.appinfo.AppInfo
-import com.nextcloud.client.core.AsyncRunner
-import com.nextcloud.client.migrations.MigrationsManager.Status
+import li.raymond.raymocloud.appinfo.AppInfo
+import li.raymond.raymocloud.core.AsyncRunner
+import li.raymond.raymocloud.migrations.MigrationsManager.Status
 
 internal class MigrationsManagerImpl(
     private val appInfo: AppInfo,

@@ -18,13 +18,13 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.network;
+package li.raymond.raymocloud.network;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
 
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.logger.Logger;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.logger.Logger;
 
 import javax.inject.Singleton;
 

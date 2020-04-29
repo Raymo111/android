@@ -17,16 +17,16 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.logger.ui
+package li.raymond.raymocloud.logger.ui
 
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.nextcloud.client.core.AsyncRunner
-import com.nextcloud.client.core.Clock
-import com.nextcloud.client.logger.LogEntry
-import com.nextcloud.client.logger.LogsRepository
+import li.raymond.raymocloud.core.AsyncRunner
+import li.raymond.raymocloud.core.Clock
+import li.raymond.raymocloud.logger.LogEntry
+import li.raymond.raymocloud.logger.LogsRepository
 import com.owncloud.android.R
 import javax.inject.Inject
 

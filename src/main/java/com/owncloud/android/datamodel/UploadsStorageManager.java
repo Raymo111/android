@@ -29,8 +29,8 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 
-import com.nextcloud.client.account.CurrentAccountProvider;
-import com.nextcloud.client.account.User;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
+import li.raymond.raymocloud.account.User;
 import com.owncloud.android.db.OCUpload;
 import com.owncloud.android.db.ProviderMeta.ProviderTableMeta;
 import com.owncloud.android.db.UploadResult;

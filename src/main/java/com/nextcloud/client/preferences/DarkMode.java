@@ -20,7 +20,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.preferences;
+package li.raymond.raymocloud.preferences;
 
 public enum DarkMode {
     DARK, LIGHT, SYSTEM

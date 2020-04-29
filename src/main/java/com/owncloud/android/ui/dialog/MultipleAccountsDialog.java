@@ -36,9 +36,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.di.Injectable;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.di.Injectable;
 import com.owncloud.android.R;
 import com.owncloud.android.ui.activity.ReceiveExternalFilesActivity;
 import com.owncloud.android.ui.adapter.UserListAdapter;

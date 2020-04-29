@@ -46,9 +46,9 @@ import android.view.View;
 import android.webkit.MimeTypeMap;
 
 import com.evernote.android.job.JobRequest;
-import com.nextcloud.client.account.CurrentAccountProvider;
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.network.ConnectivityService;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.network.ConnectivityService;
 import com.nextcloud.java.util.Optional;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;

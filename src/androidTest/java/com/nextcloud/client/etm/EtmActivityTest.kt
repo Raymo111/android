@@ -20,7 +20,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.etm
+package li.raymond.raymocloud.etm
 
 import android.app.Activity
 import androidx.test.espresso.intent.rule.IntentsTestRule

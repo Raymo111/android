@@ -20,7 +20,7 @@
  * You should have received a copy of the GNU Affero General Public
  * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.jobs
+package li.raymond.raymocloud.jobs
 
 import android.content.ContentResolver
 import android.content.Context
@@ -32,11 +32,11 @@ import android.text.TextUtils
 import androidx.exifinterface.media.ExifInterface
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import com.nextcloud.client.account.UserAccountManager
-import com.nextcloud.client.core.Clock
-import com.nextcloud.client.device.PowerManagementService
-import com.nextcloud.client.network.ConnectivityService
-import com.nextcloud.client.preferences.AppPreferences
+import li.raymond.raymocloud.account.UserAccountManager
+import li.raymond.raymocloud.core.Clock
+import li.raymond.raymocloud.device.PowerManagementService
+import li.raymond.raymocloud.network.ConnectivityService
+import li.raymond.raymocloud.preferences.AppPreferences
 import com.owncloud.android.MainApp
 import com.owncloud.android.R
 import com.owncloud.android.datamodel.ArbitraryDataProvider

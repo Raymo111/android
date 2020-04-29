@@ -32,7 +32,7 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import com.nextcloud.client.media.ErrorFormat;
+import li.raymond.raymocloud.media.ErrorFormat;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.OCFile;
 import com.owncloud.android.lib.common.utils.Log_OC;

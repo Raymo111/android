@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.jobs
+package li.raymond.raymocloud.jobs
 
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.LiveData
-import com.nextcloud.client.account.User
+import li.raymond.raymocloud.account.User
 
 /**
  * This interface allows to control, schedule and monitor all application

@@ -1,4 +1,4 @@
-package com.nextcloud.client.etm.pages
+package li.raymond.raymocloud.etm.pages
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import com.nextcloud.client.etm.EtmBaseFragment
+import li.raymond.raymocloud.etm.EtmBaseFragment
 import com.owncloud.android.R
 import kotlinx.android.synthetic.main.fragment_etm_migrations.*
 import java.util.Locale

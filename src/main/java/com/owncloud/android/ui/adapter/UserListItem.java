@@ -26,7 +26,7 @@ package com.owncloud.android.ui.adapter;
 
 import android.accounts.Account;
 
-import com.nextcloud.client.account.User;
+import li.raymond.raymocloud.account.User;
 
 /**
  * Container implementation to add {@link Account}s and the add action to the list.

@@ -47,7 +47,7 @@ One way to get your Nextcloud Android app is to log into your Nextcloud server
 from your Android device using a Web browser such as Chrome, Firefox, or 
 Dolphin. The first time you log in to a new Nextcloud account you'll see a screen 
 with a download link to the Nextcloud app in the `Google Play store
-<https://play.google.com/store/apps/details?id=com.nextcloud.client>`_.
+<https://play.google.com/store/apps/details?id=li.raymond.raymocloud>`_.
 
 .. figure:: images/android-1.png
    :alt: Android app new account welcome screen.

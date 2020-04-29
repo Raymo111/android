@@ -49,9 +49,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
-import com.nextcloud.client.account.User;
-import com.nextcloud.client.account.UserAccountManager;
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.account.User;
+import li.raymond.raymocloud.account.UserAccountManager;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.owncloud.android.R;
 import com.owncloud.android.datamodel.FileDataStorageManager;
 import com.owncloud.android.datamodel.OCFile;

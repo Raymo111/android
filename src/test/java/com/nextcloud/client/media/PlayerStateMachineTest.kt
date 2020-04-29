@@ -17,10 +17,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.media
+package li.raymond.raymocloud.media
 
-import com.nextcloud.client.media.PlayerStateMachine.Event
-import com.nextcloud.client.media.PlayerStateMachine.State
+import li.raymond.raymocloud.media.PlayerStateMachine.Event
+import li.raymond.raymocloud.media.PlayerStateMachine.State
 import com.nhaarman.mockitokotlin2.eq
 import com.nhaarman.mockitokotlin2.inOrder
 import com.nhaarman.mockitokotlin2.mock

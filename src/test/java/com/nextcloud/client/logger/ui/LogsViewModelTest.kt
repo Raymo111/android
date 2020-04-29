@@ -17,16 +17,16 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.logger.ui
+package li.raymond.raymocloud.logger.ui
 
 import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.nextcloud.client.core.Clock
-import com.nextcloud.client.core.ManualAsyncRunner
-import com.nextcloud.client.logger.Level
-import com.nextcloud.client.logger.LogEntry
-import com.nextcloud.client.logger.LogsRepository
-import com.nextcloud.client.logger.OnLogsLoaded
+import li.raymond.raymocloud.core.Clock
+import li.raymond.raymocloud.core.ManualAsyncRunner
+import li.raymond.raymocloud.logger.Level
+import li.raymond.raymocloud.logger.LogEntry
+import li.raymond.raymocloud.logger.LogsRepository
+import li.raymond.raymocloud.logger.OnLogsLoaded
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever

@@ -30,8 +30,8 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nextcloud.client.di.Injectable;
-import com.nextcloud.client.preferences.AppPreferences;
+import li.raymond.raymocloud.di.Injectable;
+import li.raymond.raymocloud.preferences.AppPreferences;
 import com.owncloud.android.R;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.adapter.LocalFileListAdapter;

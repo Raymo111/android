@@ -18,7 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.di;
+package li.raymond.raymocloud.di;
 
 import android.content.Context;
 

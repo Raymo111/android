@@ -18,7 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.di;
+package li.raymond.raymocloud.di;
 
 class InjectorNotFoundException extends RuntimeException {
     private static final long serialVersionUID = 2026042918255104421L;

@@ -1,9 +1,9 @@
-package com.nextcloud.client.preferences;
+package li.raymond.raymocloud.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.nextcloud.client.account.CurrentAccountProvider;
+import li.raymond.raymocloud.account.CurrentAccountProvider;
 
 import javax.inject.Singleton;
 

@@ -28,8 +28,8 @@ import android.os.SystemClock;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.nextcloud.client.preferences.AppPreferences;
-import com.nextcloud.client.preferences.AppPreferencesImpl;
+import li.raymond.raymocloud.preferences.AppPreferences;
+import li.raymond.raymocloud.preferences.AppPreferencesImpl;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.ui.activity.PassCodeActivity;
 import com.owncloud.android.ui.activity.RequestCredentialsActivity;

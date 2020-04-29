@@ -20,13 +20,13 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client;
+package li.raymond.raymocloud;
 
 import android.Manifest;
 import android.app.Activity;
 
 import com.facebook.testing.screenshot.Screenshot;
-import com.nextcloud.client.onboarding.FirstRunActivity;
+import li.raymond.raymocloud.onboarding.FirstRunActivity;
 import com.owncloud.android.AbstractIT;
 
 import org.junit.Rule;

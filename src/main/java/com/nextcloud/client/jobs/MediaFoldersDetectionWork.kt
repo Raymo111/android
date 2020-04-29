@@ -21,7 +21,7 @@
  * You should have received a copy of the GNU Affero General Public
  * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.jobs
+package li.raymond.raymocloud.jobs
 
 import android.app.Activity
 import android.app.NotificationManager
@@ -38,11 +38,11 @@ import androidx.core.app.NotificationCompat
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 import com.google.gson.Gson
-import com.nextcloud.client.account.User
-import com.nextcloud.client.account.UserAccountManager
-import com.nextcloud.client.core.Clock
-import com.nextcloud.client.preferences.AppPreferences
-import com.nextcloud.client.preferences.AppPreferencesImpl
+import li.raymond.raymocloud.account.User
+import li.raymond.raymocloud.account.UserAccountManager
+import li.raymond.raymocloud.core.Clock
+import li.raymond.raymocloud.preferences.AppPreferences
+import li.raymond.raymocloud.preferences.AppPreferencesImpl
 import com.owncloud.android.R
 import com.owncloud.android.datamodel.ArbitraryDataProvider
 import com.owncloud.android.datamodel.MediaFoldersModel

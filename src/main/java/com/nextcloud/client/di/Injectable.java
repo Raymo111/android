@@ -18,7 +18,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.nextcloud.client.di;
+package li.raymond.raymocloud.di;
 
 /**
  * Marks object as injectable by {@link ActivityInjector} and {@link FragmentInjector}.

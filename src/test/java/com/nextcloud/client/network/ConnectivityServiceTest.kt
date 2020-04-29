@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.nextcloud.client.network
+package li.raymond.raymocloud.network
 
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
-import com.nextcloud.client.account.Server
-import com.nextcloud.client.account.User
-import com.nextcloud.client.account.UserAccountManager
-import com.nextcloud.client.logger.Logger
+import li.raymond.raymocloud.account.Server
+import li.raymond.raymocloud.account.User
+import li.raymond.raymocloud.account.UserAccountManager
+import li.raymond.raymocloud.logger.Logger
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.never
