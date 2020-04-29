@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Nextcloud Android client application
+  Raymocloud Android client application
 
   Copyright (C) 2012  Bartek Przybylski
   Copyright (C) 2012-2016 ownCloud Inc.
   Copyright (C) 2016 Nextcloud
+  Copyright (C) 2020 Raymond Li
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License version 2,
@@ -88,7 +89,7 @@
         android:name=".MainApp"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Raymocloud"
         android:fullBackupContent="@xml/backup_config"
         android:theme="@style/Theme.ownCloud.Toolbar"
         android:networkSecurityConfig="@xml/network_security_config"

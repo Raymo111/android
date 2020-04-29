@@ -17,7 +17,7 @@
                 android:type="linear">
                 <item
                     android:offset="0"
-                    android:color="#FF0082C9" />
+                    android:color="#00CF00C9" />
                 <item
                     android:offset="1"
                     android:color="#FF1CAFFF" />
