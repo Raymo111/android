@@ -109,6 +109,7 @@ shot {
 android {
     lintOptions {
         abortOnError false
+        checkReleaseBuilds false
         htmlReport true
         htmlOutput file("$project.buildDir/reports/lint/lint.html")
         disable 'MissingTranslation',
@@ -140,7 +141,7 @@ android {
 
         multiDexEnabled true
 
-        versionCode versionMajor * 10000 + versionMinor * 100
+        versionCode versionMajor * 100000000 + versionMinor * 100000
 
         versionName "${versionMajor}.${versionMinor} Raymocloud"
 
