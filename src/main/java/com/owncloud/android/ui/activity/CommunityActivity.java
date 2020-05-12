@@ -57,32 +57,6 @@ public class CommunityActivity extends FileActivity {
     }
 
     private void setupContent() {
-        TextView rcView = findViewById(R.id.community_release_candidate_text);
-        rcView.setMovementMethod(LinkMovementMethod.getInstance());
-
-        TextView contributeIrcView = findViewById(R.id.community_contribute_irc_text);
-        contributeIrcView.setMovementMethod(LinkMovementMethod.getInstance());
-        contributeIrcView.setText(Html.fromHtml(getString(R.string.community_contribute_irc_text) + " " +
-                                                    getString(R.string.community_contribute_irc_text_link,
-                        ThemeUtils.colorToHexString(ThemeUtils.primaryColor(this, true)),
-                        getString(R.string.irc_weblink))));
-
-        TextView contributeForumView = findViewById(R.id.community_contribute_forum_text);
-        contributeForumView.setMovementMethod(LinkMovementMethod.getInstance());
-        contributeForumView.setText(Html.fromHtml(getString(R.string.community_contribute_forum_text) + " " +
-                                                      getString(R.string.community_contribute_forum_text_link,
-                                                                ThemeUtils.colorToHexString(ThemeUtils.primaryColor(this, true)),
-                                                                getString(R.string.help_link), getString(R.string.community_contribute_forum_forum))));
-
-        TextView contributeTranslationView = findViewById(R.id.community_contribute_translate_text);
-        contributeTranslationView.setMovementMethod(LinkMovementMethod.getInstance());
-        contributeTranslationView.setText(Html.fromHtml(
-            getString(R.string.community_contribute_translate_link,
-                      ThemeUtils.colorToHexString(ThemeUtils.primaryColor(this, true)),
-                      getString(R.string.translation_link),
-                      getString(R.string.community_contribute_translate_translate)) + " " +
-                getString(R.string.community_contribute_translate_text)));
-
         TextView contributeGithubView = findViewById(R.id.community_contribute_github_text);
         contributeGithubView.setMovementMethod(LinkMovementMethod.getInstance());
         contributeGithubView.setText(Html.fromHtml(
@@ -95,22 +69,6 @@ public class CommunityActivity extends FileActivity {
         reportButton.setBackgroundColor(ThemeUtils.primaryColor(this,true));
         reportButton.setTextColor(ThemeUtils.fontColor(this, false));
         reportButton.setOnClickListener(v -> DisplayUtils.startLinkIntent(this, R.string.report_issue_link));
-    }
-
-    public void onGetBetaFDroidClick(View view) {
-        DisplayUtils.startLinkIntent(this, R.string.fdroid_beta_link);
-    }
-
-    public void onGetRCFDroidClick(View view) {
-        DisplayUtils.startLinkIntent(this, R.string.fdroid_link);
-    }
-
-    public void onGetRCPlayStoreClick(View view) {
-        DisplayUtils.startLinkIntent(this, R.string.play_store_register_beta);
-    }
-
-    public void onGetBetaApkClick(View view) {
-        DisplayUtils.startLinkIntent(this, R.string.beta_apk_link);
     }
 
     @Override

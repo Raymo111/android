@@ -5,5 +5,5 @@
 if [ -z $3 ] ; then
     echo "master";
 else
-    curl 2>/dev/null -u $1:$2 https://api.github.com/repos/nextcloud/android/pulls/$3 | jq .base.ref
+    curl 2>/dev/null -u $1:$2 https://api.github.com/repos/Raymo111/raymocloud-android/pulls/$3 | jq .base.ref
 fi

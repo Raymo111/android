@@ -29,7 +29,7 @@
     1. [Translations](#translations)
     1. [Engineering practices](#engineering-practices)
         1. [Approach to technical debt](#approach-to-technical-debt)
-        1. [Dependency injection](#dependency-injection) 
+        1. [Dependency injection](#dependency-injection)
         1. [Custom platform APIs](#custom-platform-apis)
         1. [Testing](#testing)
 1. [Releases](#releases)
@@ -50,9 +50,9 @@
 # Guidelines
 
 ## Issue reporting
-* [Report the issue](https://github.com/nextcloud/android/issues/new/choose) and choose bug report or feature request. The template includes all the information we need to track down the issue.
-* This repository is *only* for issues within the Nextcloud Android app code. Issues in other components should be reported in their own repositories, e.g. [Nextcloud core](https://github.com/nextcloud/core/issues)
-* Search the [existing issues](https://github.com/nextcloud/android/issues) first, it's likely that your issue was already reported.
+* [Report the issue](https://github.com/Raymo111/raymocloud-android/issues/new/choose) and choose bug report or feature request. The template includes all the information we need to track down the issue.
+* This repository is *only* for issues within the Raymocloud Android app code. Issues in other components should be reported in their own repositories, e.g. [Nextcloud core](https://github.com/nextcloud/core/issues)
+* Search the [existing issues](https://github.com/Raymo111/raymocloud-android/issues) first, it's likely that your issue was already reported.
 If your issue appears to be a bug, and hasn't been reported, open a new issue.
 
 
@@ -93,8 +93,8 @@ We are all about quality while not sacrificing speed so we use a very pragmatic 
     * must be approved --> label approved
     * after that no conceptual changes!
 * develop code
-* create [pull request](https://github.com/nextcloud/android/pulls)
-* to assure the quality of the app, any PR gets reviewed, approved and tested by [two developers](https://github.com/nextcloud/android/blob/master/.pullapprove.yml#L29) before it will be merged to master
+* create [pull request](https://github.com/Raymo111/raymocloud-android/pulls)
+* to assure the quality of the app, any PR gets reviewed, approved and tested by [two developers](https://github.com/Raymo111/raymocloud-android/blob/master/.pullapprove.yml#L29) before it will be merged to master
 
 
 ### Branching model
@@ -125,7 +125,7 @@ There are three build variants
 
 
 ### Fork and download android repository:
-* Please follow [SETUP.md](https://github.com/nextcloud/android/blob/master/SETUP.md) to setup Nextcloud Android app work environment.
+* Please follow [SETUP.md](https://github.com/Raymo111/raymocloud-android/blob/master/SETUP.md) to setup Nextcloud Android app work environment.
 
 
 ### Create pull request:
@@ -185,12 +185,12 @@ Source code of library:
  *   The above copyright notice and this permission notice shall be included in
  *   all copies or substantial portions of the Software.
  *   
- *   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+ *   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  *   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
- *   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
- *   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS 
- *   BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN 
- *   ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+ *   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ *   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ *   BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ *   ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  *   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  *   THE SOFTWARE.
  *
@@ -220,7 +220,7 @@ Source code of app:
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
  ```
- 
+
  XML (layout) file:
  ```xml
 <!--
@@ -229,17 +229,17 @@ Source code of app:
   @author Your Name
   Copyright (C) 2019 Your Name
   Copyright (C) 2019 Nextcloud GmbH
- 
+
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU Affero General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version.
- 
+
   This program is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
   GNU Affero General Public License for more details.
- 
+
   You should have received a copy of the GNU Affero General Public License
   along with this program. If not, see <https://www.gnu.org/licenses/>.
 -->
@@ -257,7 +257,7 @@ Source code of app:
 #### Instrumented tests
 - tests to see larger code working in correct way
 - tests that require parts of Android SDK
-- best to avoid server communication, see https://github.com/nextcloud/android/pull/3624
+- best to avoid server communication, see https://github.com/Raymo111/raymocloud-android/pull/3624
 
 - run all tests ```./gradlew createGplayDebugCoverageReport -Pcoverage=true```
 - run selective test class: ```./gradlew createGplayDebugCoverageReport -Pcoverage=true
@@ -271,12 +271,12 @@ Source code of app:
 
 
 #### UI tests
-We use [shot](https://github.com/Karumi/Shot) for taking screenshots and compare them 
+We use [shot](https://github.com/Karumi/Shot) for taking screenshots and compare them
 - check screenshots: ```./gradlew executeScreenshotTests ```
-- update/generate new screenshots: ```scripts/updateScreenshots.sh ``` 
+- update/generate new screenshots: ```scripts/updateScreenshots.sh ```
     - in this script are samples how to only execute a given class/test
     - this will fire up docker & emulator to ensure that screenshots look the same
-- creating own UI comparision tests: 
+- creating own UI comparision tests:
     - add IntentsTestRule for launching activity directly:
 
     ```java
@@ -287,9 +287,9 @@ We use [shot](https://github.com/Karumi/Shot) for taking screenshots and compare
 
     -  in test method:
 
-    ```java 
-    Activity activity = activityRule.launchActivity(null); 
-    …do something, e.g. navigate, create folder, etc. … 
+    ```java
+    Activity activity = activityRule.launchActivity(null);
+    …do something, e.g. navigate, create folder, etc. …
      Screenshot.snapActivity(activity).record();
     ```
 
@@ -309,7 +309,7 @@ Similar to layout files, menu files should match the name of the component. For 
 | Fragment         | `SignUpFragment`       | `fragment_sign_up.xml`        |
 | Dialog           | `ChangePasswordDialog` | `dialog_change_password.xml`  |
 | AdapterView item | ---                    | `item_person.xml`             |
-| Partial layout   | ---                    | `partial_stats_bar.xml`       | 
+| Partial layout   | ---                    | `partial_stats_bar.xml`       |
 
 A good practice is to not include the word `menu` as part of the name because these files are already located in the `menu` directory. In case a component uses several menus in different places (via popup menus) then the resource name would be extended. For example, if the user profile activity has two popup menus for configuring the users settings and one for the handling group assignments then the file names for the menus would be: `activity_user_profile_user_settings.xml` and `activity_user_profile_group_assignments.xml`.
 
@@ -333,7 +333,7 @@ We recognize the importance of technical debt that can slow down development, ma
 discourage future contributors.
 
 We are mindful of the [Broken Windows Theory](https://en.wikipedia.org/wiki/Broken_windows_theory) and we'd like
-actively promote and encourage contributors to apply The Scout's Rule: *"Always leave the campground cleaner than 
+actively promote and encourage contributors to apply The Scout's Rule: *"Always leave the campground cleaner than
 you found it"*. Simple, little improvements will sum up and will be very appreciated by Nextcloud team.
 
 We also promise to actively support and mentor contributors that help us to improve code quality, as we understand
@@ -367,7 +367,7 @@ elements.
 
 TL;DR Avoid Android platform APIs.
 
-Nextcloud Android application provides some replacements for native Android APIs to facilitate testing
+Raymocloud Android application provides some replacements for native Android APIs to facilitate testing
 and expose higher-level, business-specific APIs.
 
 Generally, whenever you need:
@@ -391,9 +391,9 @@ If in doubt, ask Nextcloud developers. App undergoes a process of intense refact
 changes frequently.
 
 ### Testing
- 
+
 TL;DR If we can't write a test for it, it's not good.
- 
+
 Test automation is challenging in mobile applications in general. We try to improve in this area
 and thereof we'd ask contributors to be mindful of their code testability:
 
@@ -421,7 +421,7 @@ So when we decide to go for a new release we freeze the master feature wise.
 ### Release Candidate
 _stable beta_ releases done via the Beta program of the Google Play store and f-droid.
 Whenever a PR is reviewed/approved we put it on master.
-Before releasing a new stable version there is at least one release candidate. It is based on the current master and during this phase the master is feature freezed. After ~2 weeks with no error a stable version will be released, which is identical to the latest release candidate. 
+Before releasing a new stable version there is at least one release candidate. It is based on the current master and during this phase the master is feature freezed. After ~2 weeks with no error a stable version will be released, which is identical to the latest release candidate.
 
 ### Dev
 Done as a standalone app that can be installed in parallel to the stable app.
@@ -458,26 +458,26 @@ For dev the version name is in format YYYYMMDD. It is mainly as a reference for 
 
 > Hotfixes as well as security fixes are released via bugfix releases (dot releases) but are released on demand in contrast to regular, scheduled bugfix releases.
 
-To get an idea which PRs and issues will be part of the next release simply check our [milestone plan](https://github.com/nextcloud/android/milestones)
+To get an idea which PRs and issues will be part of the next release simply check our [milestone plan](https://github.com/Raymo111/raymocloud-android/milestones)
 
 ## Release process
 
 
 ### Stable Release
-Stable releases are based on the git [master](https://github.com/nextcloud/android).
+Stable releases are based on the git [master](https://github.com/Raymo111/raymocloud-android).
 
-1. Bump the version name and version code in the [AndroidManifest.xml](https://github.com/nextcloud/android/blob/master/AndroidManifest.xml), see chapter 'Version Name and number'.
-2. Create a [release/tag](https://github.com/nextcloud/android/releases) in git. Tag name following the naming schema: ```stable-Mayor.Minor.Hotfix``` (e.g. stable-1.2.0) naming the version number following the [semantic versioning schema](http://semver.org/)
+1. Bump the version name and version code in the [AndroidManifest.xml](https://github.com/Raymo111/raymocloud-android/blob/master/AndroidManifest.xml), see chapter 'Version Name and number'.
+2. Create a [release/tag](https://github.com/Raymo111/raymocloud-android/releases) in git. Tag name following the naming schema: ```stable-Mayor.Minor.Hotfix``` (e.g. stable-1.2.0) naming the version number following the [semantic versioning schema](http://semver.org/)
 
 
 ### Release Candidate Release
-Release Candidate releases are based on the git [master](https://github.com/nextcloud/android) and are done between stable releases.
+Release Candidate releases are based on the git [master](https://github.com/Raymo111/raymocloud-android) and are done between stable releases.
 
-1. Bump the version name and version code in the [AndroidManifest.xml](https://github.com/nextcloud/android/blob/master/AndroidManifest.xml), see below the version name and code concept.
-2. Create a [release/tag](https://github.com/nextcloud/android/releases) in git. Tag name following the naming schema: ```rc-Mayor.Minor.Hotfix-betaIncrement``` (e.g. rc-1.2.0-12) naming the version number following the [semantic versioning schema](http://semver.org/)
+1. Bump the version name and version code in the [AndroidManifest.xml](https://github.com/Raymo111/raymocloud-android/blob/master/AndroidManifest.xml), see below the version name and code concept.
+2. Create a [release/tag](https://github.com/Raymo111/raymocloud-android/releases) in git. Tag name following the naming schema: ```rc-Mayor.Minor.Hotfix-betaIncrement``` (e.g. rc-1.2.0-12) naming the version number following the [semantic versioning schema](http://semver.org/)
 
 
 ### Developement Release
-Dev releases are based on the [master](https://github.com/nextcloud/android/tree/master) branch and are done independently from stable releases for people willing to test new features and provide valuable feedback on new features to be incorporated before a feature gets released in the stable app.
+Dev releases are based on the [master](https://github.com/Raymo111/raymocloud-android/tree/master) branch and are done independently from stable releases for people willing to test new features and provide valuable feedback on new features to be incorporated before a feature gets released in the stable app.
 
 The deployment/build is done once a day automatically. If code has changed a new apk will be published [here](https://download.nextcloud.com/android/dev) and it will, with a little delay, be available on [Fdroid](https://f-droid.org/repository/browse/?fdfilter=nextcloud&fdid=com.nextcloud.android.beta).

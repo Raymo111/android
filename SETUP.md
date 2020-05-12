@@ -30,12 +30,12 @@ You will need [git][1] to access to the different versions of the Nextcloud's so
 
 The next steps will assume you have a GitHub account and that you will get the code from your own fork.
 
-* In a web browser, go to https://github.com/nextcloud/android, and click the 'Fork' button near the top right corner.
+* In a web browser, go to https://github.com/Raymo111/raymocloud-android, and click the 'Fork' button near the top right corner.
 * Open a terminal and go on with the next steps in it.
 * Clone your forked repository: ```git clone --recursive https://github.com/YOURGITHUBNAME/android.git```.
 * Move to the project folder with ```cd android```.
 * Pull any changes from your remote branch 'master': ```git pull origin master```
-* Make official Nextcloud repo known as upstream: ```git remote add upstream https://github.com/nextcloud/android.git```
+* Make official Nextcloud repo known as upstream: ```git remote add upstream https://github.com/Raymo111/raymocloud-android.git```
 * Make sure to get the latest changes from official android/master branch: ```git pull upstream master```
 
 At this point you can continue using different tools to build the project. Section 2 and 3 describe the existing alternatives.
@@ -72,11 +72,11 @@ The generated APK file is saved in android/build/outputs/apk as android-debug.ap
 ### 4. App flavours
 
 The app is currently equipped to be built with three flavours:
-* generic - the regular build, released as Nextcloud Android app on FDroid
+* generic - the regular build, released as Raymocloud Android app on FDroid
 * gplay - with Google Stuff (Push notification), used for Google Play Store
 * versionDev - based on master and library master, available as direct download and FDroid
 
-[0]: https://github.com/nextcloud/android/blob/master/CONTRIBUTING.md
+[0]: https://github.com/Raymo111/raymocloud-android/blob/master/CONTRIBUTING.md
 [1]: https://git-scm.com/
 [2]: https://git-scm.com/downloads
 [3]: https://developer.android.com/sdk/index.html
@@ -94,13 +94,13 @@ This is handy if one wants to make changes both to files app and library:
 - in files app root: ln -s $pathToLibraryProject nextcloud-android-library
 - uncomment in build.gradle:  
     - `//    implementation project('nextcloud-android-library')`
-- comment in build.gradle: 
+- comment in build.gradle:
     - `genericImplementation 'com.github.nextcloud:android-library:master-SNAPSHOT'`
     - `gplayImplementation 'com.github.nextcloud:android-library:master-SNAPSHOT'`
     - `versionDevImplementation 'com.github.nextcloud:android-library:master-SNAPSHOT'`
-- comment in settings.gradle: 
+- comment in settings.gradle:
     - `include ':'`
-- uncomment in settings.gradle: 
+- uncomment in settings.gradle:
     - `//include 'nextcloud-android-library'`
 - sync project with gradle files
 

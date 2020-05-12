@@ -1,6 +1,6 @@
 # Raymocloud Android app :iphone:
 
-**The Android client for Raymocloud. Forked from [nextcloud/android](https://github.com/nextcloud/android).**
+**The Android client for Raymocloud. Forked from [nextcloud/android](https://github.com/Raymo111/raymocloud-android).**
 
 ![App screenshots](/doc/Raymocloud_Android_Screenshots.png "App screenshots")
 

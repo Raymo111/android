@@ -12,7 +12,7 @@ Zure datuak kontrolpean mantentzen dituen norberak ostatatutako produktibitate p
 * Sarbide segurua zure datuetarako hatz-marka edo PIN bidez
 * DAVx5-rekin integratua (lehenago DAVdroid izenarekin ezagutzen zena) egutegia erraz konfiguratzeko eta kontaktuak sinkronizatzeko
 
- Eman arazoen berri https://github.com/nextcloud/android/issues orrian eta eztabaidatu aplikazio hau https://help.nextcloud.com/c/clients/android orrian
+ Eman arazoen berri https://github.com/Raymo111/raymocloud-android/issues orrian eta eztabaidatu aplikazio hau https://help.nextcloud.com/c/clients/android orrian
 
  Berria Nextcloud-en? Nextcloud fitxategiak sinkronizatu eta partekatzeko eta komunikaziorako zerbitzari pribatu bat da. Software librea da, eta zuk zeuk ostatatu dezakezu edo enpresa bat ordaindu zure ordez ostatatzeko. Horrela, zure argazkiak, zure egutegia eta kontaktuen datuak, zure dokumentuak eta gainerako guztia zuk kontrolatzen dituzu.
 

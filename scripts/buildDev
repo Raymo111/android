@@ -1,7 +1,7 @@
 #!/bin/bash
 date=$(date +%Y%m%d)
 oldLibraryCommit=$(grep "androidLibraryVersion\ =" build.gradle)
-libraryCommit=$(curl https://api.github.com/repos/nextcloud/android-library/commits/master | jq .sha | sed s'/\"//g')
+libraryCommit=$(curl https://api.github.com/repos/Raymo111/raymocloud-android-library/commits/master | jq .sha | sed s'/\"//g')
 
 # use current date for version code/name
 sed -i "/versionDev/,/\}/ s/versionCode .*/versionCode $date/" build.gradle

@@ -12,7 +12,7 @@ Ominaisuudet:
 * Turvallinen pääsy tietoihin joko sormenjäljellä tai PIN-koodilla
 * Integraatio DAVdroidin kanssa kalenterin ja yhteystietojen synkronoimiseksi
 
-Ilmoita ongelmista osoitteessa https://github.com/nextcloud/android/issues ja keskustele sovelluksesta osoitteessa https://help.nextcloud.com/c/clients/android
+Ilmoita ongelmista osoitteessa https://github.com/Raymo111/raymocloud-android/issues ja keskustele sovelluksesta osoitteessa https://help.nextcloud.com/c/clients/android
 
 Mikä Nextcloud on? Nextcloud on yksityinen tiedostojen synkronointi-, jako- ja viestintäpalvelin. Se on täysin avointa lähdekoodia, ja voit ottaa sen täysin omalle vastuullesi tai maksaa kolmannelle osapuolelle palvelimen ylläpidosta. Näin ollen hallitset itse kuviasi, kalenteriasi, yhteystietojasi, asiakirjojasi ja kaikkea muuta.
 

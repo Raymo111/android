@@ -13,7 +13,7 @@ Funkce:
 *  Propojení s aplikací DAVx5 (dříve známé jako DAVdroid) pro snadné nastavení synchronizace kalendáře a kontaktů
 
 
-Veškeré problémy prosíme hlaste na https://github.com/nextcloud/android/issues, diskutovat lze na https://help.nextcloud.com/c/clients/android
+Veškeré problémy prosíme hlaste na https://github.com/Raymo111/raymocloud-android/issues, diskutovat lze na https://help.nextcloud.com/c/clients/android
 
 Ještě Nextcloud neznáte? Je to server pro komunikaci, synchronizaci a sdílení vašich dat. Jedná se o svobodný software, který můžete provozovat sami, nebo si jako službu koupit u jiné společnosti. Díky tomu máte kontrolu nad svými fotkami, kalendářem, kontakty i dokumenty a vším ostatním.
 

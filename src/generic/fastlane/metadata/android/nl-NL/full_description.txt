@@ -12,7 +12,7 @@ Functies:
 * veilige toegang tot je gegevens door vingerafdruk of  PIN
 * Integratie met DAVx5 (vroeger bekend als DAVdroid) vooreenvoudig instellen van je agenda& Contactpersonensynchronisatie
 
-Meld alle problemen op https://github.com/nextcloud/android/issues en bespreek deze app op https://help.nextcloud.com/c/clients/android
+Meld alle problemen op https://github.com/Raymo111/raymocloud-android/issues en bespreek deze app op https://help.nextcloud.com/c/clients/android
 
 Nieuw bij Nextcloud? Nextcloud is een persoonlijk bestandensync- & -deel en communicatieserver. het is vrije software, die je zelf kunt draaien of bij een betaalde provider. Hierdoor ben je zelf in control van jouw foto's, jouw agenda en contactgegevens, jouw documenten en al het andere.
 

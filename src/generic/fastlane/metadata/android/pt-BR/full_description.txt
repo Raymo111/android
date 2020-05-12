@@ -12,7 +12,7 @@ Características:
 * Acesso seguro aos seus dados com impressão digital ou PIN
 * Integração com o DAVx5 (anteriormente conhecido como DAVdroid) para facilitar a configuração do calendário & sincronização de contatos
 
-Favor informar todos os problemas em https://github.com/nextcloud/android/issues e discutir este aplicativo em https://help.nextcloud.com/c/clients/android
+Favor informar todos os problemas em https://github.com/Raymo111/raymocloud-android/issues e discutir este aplicativo em https://help.nextcloud.com/c/clients/android
 
 Novo no Nextcloud? Nextcloud é uma sincronização de arquivos privada para compartilhamento & comunicação. É um software livre e você pode hospedá-lo sozinho ou pagar uma empresa para fazer isso por você. Dessa forma, você controla suas fotos, dados de calendário e de contato, documentos e tudo mais.
 

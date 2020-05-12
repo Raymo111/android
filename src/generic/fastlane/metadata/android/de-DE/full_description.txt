@@ -17,7 +17,7 @@ Eigenschaften:
 * Geschützter Zugriff durch Fingerabdruck oder PIN
 * Integration mit DAVx5 (ehemals DAVdroid) für einfaches Konfigurieren der Kalender- & Kontakte-Synchronisierung
 
-Bitte melden Sie alle Probleme unter https://github.com/nextcloud/android/issues oder diskutieren Sie über die App auf https://help.nextcloud.com/c/clients/android
+Bitte melden Sie alle Probleme unter https://github.com/Raymo111/raymocloud-android/issues oder diskutieren Sie über die App auf https://help.nextcloud.com/c/clients/android
 
 Was ist die Nextcloud? Die Nextcloud ist ein privater Dateiaustausch & -synchronisierungs Server. Nextcloud ist Open Source und kann auf einem eigenen Server installiert werden. So behalten Sie die Kontrolle über Ihre Fotos, Ihre Kalender und Kontakte, Ihre Dokumente und alle anderen Daten.
 

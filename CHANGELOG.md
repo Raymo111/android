@@ -7,7 +7,7 @@
  - fix hanging UI after saving
 - open office files online if no local app installed
 
-For a full list, please see https://github.com/nextcloud/android/milestone/47
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/47
 
 ## 3.11.0 (March, 26, 2020)
 
@@ -18,14 +18,14 @@ For a full list, please see https://github.com/nextcloud/android/milestone/47
 - support for circle
 - last version supporting Android 4.1
 
-For a full list, please see https://github.com/nextcloud/android/milestone/41
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/41
 
 ## 3.10.1 (February, 05, 2020)
 
 - fix crash on self-signed certificates
 - fix openOffice open files with special chars
 
-For a full list, please see https://github.com/nextcloud/android/milestone/45
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/45
 
 ## 3.10.0 (January, 17, 2020)
 
@@ -38,7 +38,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/45
 - outdated server warning set to NC15
 - latest supported version NC13
 
-For a full list, please see https://github.com/nextcloud/android/milestone/40
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/40
 
 ## 3.9.2 (December, 05, 2019)
 
@@ -46,14 +46,14 @@ For a full list, please see https://github.com/nextcloud/android/milestone/40
 - Fix crash on opening png images
 - Translation updates
 
-For a full list, please see https://github.com/nextcloud/android/milestone/44
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/44
 
 ## 3.9.1 (December, 04, 2019)
 
 - Fix crash on opening png images
 - Translation updates
 
-For a full list, please see https://github.com/nextcloud/android/milestone/43
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/43
 
 ## 3.9.0 (November, 12, 2019)
 
@@ -66,7 +66,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/43
 - enhanced SingleSignOn
 - outdated server warning set to NC14
 
-For a full list, please see https://github.com/nextcloud/android/milestone/38
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/38
 
 ## 3.8.1 (October, 11, 2019)
 
@@ -79,7 +79,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/38
 - bugfix release
 - updated translations
 
-For a full list, please see https://github.com/nextcloud/android/milestone/39
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/39
 
 ## 3.8.0 (September, 14, 2019)
 
@@ -95,20 +95,20 @@ For a full list, please see https://github.com/nextcloud/android/milestone/39
 - fix reloading in activity stream
 - lots of bugfixes and refinements
 
-For a full list, please see https://github.com/nextcloud/android/milestone/35
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/35
 
 ## 3.7.2 (August, 16, 2019)
 
 - Transifex update
 - bump to lib 1.5.0
 
-For a full list, please see https://github.com/nextcloud/android/milestone/37
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/37
 
 ## 3.7.1 (July, 30, 2019)
 
 - fix for Global Scale
 
-For a full list, please see https://github.com/nextcloud/android/milestone/36
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/36
 
 ## 3.7.0 (July, 09, 2019)
 
@@ -121,7 +121,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/36
 - end of life warning: NC13 and older
 - lots of bugfixes and refinements under the hood to provide an even more stable app
 
-For a full list, please see https://github.com/nextcloud/android/milestone/32
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/32
 
 ## 3.6.2 (May, 23, 2019)
 - fix bug when creating preview
@@ -129,7 +129,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/32
 - fix account switch
 - fix jumping to top on sync
 
-For a full list, please see https://github.com/nextcloud/android/milestone/34
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/34
 
 ## 3.6.1 (May, 12, 2019)
 - show reshares correctly
@@ -140,7 +140,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/34
 - enhance pass protection system
 - bugfixes
 
-For a full list, please see https://github.com/nextcloud/android/milestone/33
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/33
 
 ## 3.6.0 (April, 09, 2019)
 - remove "expert mode"
@@ -153,7 +153,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/33
 - min supported server is NC12
 - warn on outdated server: <=NC14
 
-For a full list, please see https://github.com/nextcloud/android/milestone/30
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/30
 
 ## 3.5.1 (March, 18, 2019)
 - fixed SSO dialog
@@ -164,7 +164,7 @@ For a full list, please see https://github.com/nextcloud/android/milestone/30
 - add storage picker to upload local chooser
 - updated translations
 
-For a full list, please see https://github.com/nextcloud/android/milestone/31
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/31
 
 ## 3.5.0 (February, 13, 2019)
 - Chunked upload: 1MB on mobile data, 10MB on Wi-Fi
@@ -179,14 +179,14 @@ For a full list, please see https://github.com/nextcloud/android/milestone/31
 - Sync all downloaded
 - Add battery optimization warning
 
-For a full list, please see https://github.com/nextcloud/android/milestone/28
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/28
 
 ## 3.4.2 (January, 21, 2019)
 - fix sharing to group
 - show correct share error messages
 - fix bug when searching for user/group if Talk is disabled
 
-For a full list, please see https://github.com/nextcloud/android/milestone/29
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/29
 
 ## 3.4.1 (December, 23, 2018)
 - fix wrong detection of direct editing capability for RichDocuments
@@ -204,12 +204,12 @@ For a full list, please see https://github.com/nextcloud/android/milestone/29
 - SSO: add request header for deck app
 - bug fixes
 
-For a full list, please see https://github.com/nextcloud/android/milestone/25
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/25
 
 ## 3.3.2 (November, 02, 2018)
 - fix fingerprint not working on certain devices
 
-For a full list, please see https://github.com/nextcloud/android/milestone/27
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/27
 
 ## 3.3.1 (October, 29, 2018)
 Bugfix release
@@ -218,7 +218,7 @@ Bugfix release
 - fixed setup DAVdroid via settings
 - hide edit option on shares, if not allowed
 
-For a full list, please see https://github.com/nextcloud/android/milestone/26
+For a full list, please see https://github.com/Raymo111/raymocloud-android/milestone/26
 
 ## 3.3.0 (September, 19, 2018)
 - Support for Trashbin (Nc14+)

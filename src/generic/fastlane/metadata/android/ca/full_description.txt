@@ -12,7 +12,7 @@ Característiques:
 * Accés segur a les vostres dades amb empremta digital o PIN.
 * Integració amb l'aplicació DAVx5 (formalment coneguda com a DAVdroid) per a poder configurar fàcilment la sincronització de contactes i calendaris.
 
-Si us plau, informeu de qualsevol incidència a https://github.com/nextcloud/android/issues i intercanvieu opinions i suggeriments a https://help.nextcloud.com/c/clients/android
+Si us plau, informeu de qualsevol incidència a https://github.com/Raymo111/raymocloud-android/issues i intercanvieu opinions i suggeriments a https://help.nextcloud.com/c/clients/android
 
 Sou nou a Nextcloud? Nextcloud és un servidor per compartir, sincronitzar i comunicar fitxers privats. És programari lliure, i per tant podeu allotjar-lo vosaltres mateixos o pagar els serveis d'algú que us ho faci. D'aquesta manera tindreu sota el vostre control les vostres fotos, els vostres calendaris, els vostres contactes, els vostres documents i tota la resta.
 

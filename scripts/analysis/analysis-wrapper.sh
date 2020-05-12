@@ -54,10 +54,10 @@ else
     curl 2>/dev/null -u $4:$5 -X PUT https://nextcloud.kaminsky.me/remote.php/webdav/$repository-findbugs/$6.html --upload-file build/reports/spotbugs/spotbugs.html
 
     # delete all old comments, starting with Codacy
-    oldComments=$(curl 2>/dev/null -u $1:$2 -X GET https://api.github.com/repos/nextcloud/android/issues/$7/comments | jq '.[] | (.id |tostring) + "|" + (.user.login | test("nextcloud-android-bot") | tostring) + "|" + (.body | test("<h1>Codacy.*") | tostring)'  | grep "true|true" | tr -d "\"" | cut -f1 -d"|")
+    oldComments=$(curl 2>/dev/null -u $1:$2 -X GET https://api.github.com/repos/Raymo111/raymocloud-android/issues/$7/comments | jq '.[] | (.id |tostring) + "|" + (.user.login | test("nextcloud-android-bot") | tostring) + "|" + (.body | test("<h1>Codacy.*") | tostring)'  | grep "true|true" | tr -d "\"" | cut -f1 -d"|")
 
     echo $oldComments | while read comment ; do
-        curl 2>/dev/null -u $1:$2 -X DELETE https://api.github.com/repos/nextcloud/android/issues/comments/$comment
+        curl 2>/dev/null -u $1:$2 -X DELETE https://api.github.com/repos/Raymo111/raymocloud-android/issues/comments/$comment
     done
 
     # check library, only if base branch is master
@@ -145,7 +145,7 @@ else
         gplayLimitation="<h1>Following files are beyond 500 char limit:</h1><br><br>"$gplayLimitation
     fi
 
-    curl -u $1:$2 -X POST https://api.github.com/repos/nextcloud/android/issues/$7/comments -d "{ \"body\" : \"$codacyResult $lintResult $findbugsResultNew $findbugsResultOld $checkLibraryMessage $lintMessage $findbugsMessage $ktlintMessage $detektMessage $gplayLimitation \" }"
+    curl -u $1:$2 -X POST https://api.github.com/repos/Raymo111/raymocloud-android/issues/$7/comments -d "{ \"body\" : \"$codacyResult $lintResult $findbugsResultNew $findbugsResultOld $checkLibraryMessage $lintMessage $findbugsMessage $ktlintMessage $detektMessage $gplayLimitation \" }"
 
     if [ ! -z "$gplayLimitation" ]; then
         exit 1

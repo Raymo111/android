@@ -12,7 +12,7 @@ Sizin kontrolunuz altında barındırılan üretkenlik platformu.
 * Verilere parmak izi y ada pin kodu ile güvenli erişim
 * Kolay takvim ve kişi eşitleme kurulumu için DAVx5 bütünleştirmesi (eski adı DAVdroid)
 
-Lütfen olabilecek sorunları https://github.com/nextcloud/android/issues adresine bildirin ve uygulama ile ilgili görüşlerinizi https://help.nextcloud.com/c/clients/android adresine yazın
+Lütfen olabilecek sorunları https://github.com/Raymo111/raymocloud-android/issues adresine bildirin ve uygulama ile ilgili görüşlerinizi https://help.nextcloud.com/c/clients/android adresine yazın
 
 Nextcloud kullanmaya yeni mi başladınız? Nextcloud kişisel dosyaları eşitlemek ve paylaşmak için kullanılan bir iletişim sunucusudur. Özgür bir yazılımdır ve kendiniz barındırabileceğiniz gibi bir kuruluş üzerinde ücretli olarak barındırabilirsiniz. Böylece fotoğraflarınız, takviminiz, kişi bilgileriniz ve belgeleriniz gibi pek çok veriyi kendi kontrolunuz altında tutabilirsiniz.
 

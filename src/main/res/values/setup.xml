@@ -5,11 +5,15 @@
     <bool name="dev_version_direct_download_enabled">false</bool>
 
     <!-- App name  and other strings-->
-    <string name="app_name">Nextcloud</string>
+    <string name="app_name">Raymocloud</string>
     <string name="account_type">nextcloud</string>     <!-- better if was a domain name; but changing it now would require migrate accounts when the app is updated -->
-    <string name="authority">org.nextcloud</string>    <!-- better if was the app package with ".provider" appended ; it identifies the provider -->
-    <string name="users_and_groups_search_authority">com.nextcloud.android.providers.UsersAndGroupsSearchProvider</string>
-    <string name="users_and_groups_share_with">com.nextcloud.android.providers.UsersAndGroupsSearchProvider.action.SHARE_WITH</string>
+    <string name="authority">li.raymond</string>    <!-- better if was the app package with ".provider"
+    appended ;
+    it identifies the provider -->
+    <string name="users_and_groups_search_authority">li.raymond.raymocloud.providers
+        .UsersAndGroupsSearchProvider</string>
+    <string name="users_and_groups_share_with">li.raymond.raymocloud.providers.UsersAndGroupsSearchProvider.action
+        .SHARE_WITH</string>
     <string name="document_provider_authority">org.nextcloud.documents</string>
     <string name="file_provider_authority">org.nextcloud.files</string>
     <string name="image_cache_provider_authority">org.nextcloud.imageCache.provider</string>
@@ -77,7 +81,7 @@
     <bool name="recommend_enabled">true</bool>
     <bool name="logger_enabled">false</bool>
     <bool name="sourcecode_enabled">true</bool>
-    <string name="sourcecode_url" translatable="false">https://github.com/nextcloud/android</string>
+    <string name="sourcecode_url" translatable="false">https://github.com/Raymo111/raymocloud-android</string>
     <bool name="license_enabled">true</bool>
     <string name="license_url" translatable="false">https://www.gnu.org/licenses/gpl-2.0.html</string>
     <string name="url_imprint"></string>
@@ -97,15 +101,17 @@
     <!-- Determine is participate enabled -->
     <bool name="participate_enabled">true</bool>
     <!-- Participate links -->
-    <string name="fdroid_beta_link" translatable="false">https://f-droid.org/repository/browse/?fdid=com.nextcloud.android.beta</string>
+    <string name="fdroid_beta_link"
+        translatable="false">https://f-droid.org/repository/browse/?fdid=li.raymond.raymocloud
+        .beta</string>
     <string name="beta_apk_link" translatable="false">https://download.nextcloud.com/android/dev/latest.apk</string>
     <string name="play_store_register_beta" translatable="false">https://play.google.com/apps/testing/li.raymond.raymocloud</string>
     <string name="fdroid_link" translatable="false">https://f-droid.org/repository/browse/?fdid=li.raymond.raymocloud</string>
     <string name="irc_weblink" translatable="false">http://webchat.freenode.net?channels=nextcloud-mobile</string>
     <string name="help_link" translatable="false">https://help.nextcloud.com/c/clients/android</string>
     <string name="translation_link" translatable="false">https://www.transifex.com/nextcloud/nextcloud/android/</string>
-    <string name="contributing_link" translatable="false">https://github.com/nextcloud/android/blob/master/CONTRIBUTING.md</string>
-    <string name="report_issue_link" translatable="false">https://github.com/nextcloud/android/issues/new/choose</string>
+    <string name="contributing_link" translatable="false">https://github.com/Raymo111/raymocloud-android/blob/master/CONTRIBUTING.md</string>
+    <string name="report_issue_link" translatable="false">https://github.com/Raymo111/raymocloud-android/issues/new/choose</string>
 
     <!-- login data links -->
     <string name="login_data_own_scheme" translatable="false">nc</string>
@@ -123,7 +129,7 @@
     <!-- Dev settings -->
     <string name="dev_link">https://download.nextcloud.com/android/dev/nextcloud-dev-</string>
     <string name="dev_latest">https://download.nextcloud.com/android/dev/latest</string>
-    <string name="dev_changelog">https://github.com/nextcloud/android/raw/dev/CHANGELOG.md</string>
+    <string name="dev_changelog">https://github.com/Raymo111/raymocloud-android/raw/dev/CHANGELOG.md</string>
 
     <string name="buildNumber" translatable="false"></string>
 </resources>

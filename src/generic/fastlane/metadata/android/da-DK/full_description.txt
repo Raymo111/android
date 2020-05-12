@@ -11,7 +11,7 @@ Features:
 * Sikker adgang til dine data med fingeraftryk eller PIN
 * Integration med DAVx5 (tidligere DAVdroid) for nem opsætning af kalender &Synkronisering af kontaker
 
-Venligst rapporter alle fejl og mangler på https://github.com/nextcloud/android/issues og deltag i debat om denne app på https://help.nextcloud.com/c/clients/android
+Venligst rapporter alle fejl og mangler på https://github.com/Raymo111/raymocloud-android/issues og deltag i debat om denne app på https://help.nextcloud.com/c/clients/android
 
 Første gang du prøver Nextcloud? Nextcloud er en privat fil synkroniserings- &, dele- og kommunikationsserver. Det er fri software, og du kan være din egen vært eller betale et firma for at være vært for dig. På den måde har du kontrol over dine photos, din kalender og kontakt data, dine dokumenter og alt det andet.
 
