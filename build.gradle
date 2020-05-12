@@ -176,14 +176,14 @@ android {
             }
 
             versionDev {
-                applicationId "com.nextcloud.android.beta"
+                applicationId "li.raymond.raymocloud.beta"
                 dimension "default"
                 versionCode 20200129
                 versionName "20200129"
             }
 
             qa {
-                applicationId "com.nextcloud.android.qa"
+                applicationId "li.raymond.raymocloud.qa"
                 dimension "default"
                 versionCode 1
                 versionName "1"

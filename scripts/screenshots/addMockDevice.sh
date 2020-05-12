@@ -67,8 +67,8 @@ for i in $(find ../../fastlane | grep png | grep Screenshots) ; do
     esac
 
     if [ -e ../../src/main/res/values$locale/strings.xml ] ; then
-        heading=$(grep $textID"_heading" ../../src/main/res/values$locale/strings.xml | cut -d">" -f2 | cut -d"<" -f1 | sed s'#\&amp;#\\&#')
-        subline=$(grep $textID"_subline" ../../src/main/res/values$locale/strings.xml | cut -d">" -f2 | cut -d"<" -f1 | sed s'#\&amp;#\\&#')
+        heading=$(grep $textID"_heading" ../../src/main/res/values/strings.xml | cut -d">" -f2 | cut -d"<" -f1 | sed s'#\&amp;#\\&#')
+        subline=$(grep $textID"_subline" ../../src/main/res/values/strings.xml | cut -d">" -f2 | cut -d"<" -f1 | sed s'#\&amp;#\\&#')
     else
         heading=""
         subline=""
