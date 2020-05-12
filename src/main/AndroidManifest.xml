@@ -21,7 +21,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="li.raymond.raymocloud">
+    package="com.owncloud.android">
 
     <!-- GET_ACCOUNTS is needed for API <= 22.
         For API >= 23 results in the addition of CONTACTS group to the list of permissions that may be
