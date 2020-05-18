@@ -29,7 +29,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.text.TextUtils;
@@ -117,8 +116,6 @@ public class PreviewImageActivity extends FileActivity implements
 
         // ActionBar
         updateActionBarTitleAndHomeButton(null);
-
-        ThemeUtils.tintBackButton(actionBar, this, Color.WHITE);
 
         mFullScreenAnchorView = getWindow().getDecorView();
         // to keep our UI controls visibility in line with system bars visibility

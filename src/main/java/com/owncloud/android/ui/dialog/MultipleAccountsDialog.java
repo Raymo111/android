@@ -131,13 +131,7 @@ public class MultipleAccountsDialog extends DialogFragment implements Injectable
     }
 
     @Override
-    public void onOptionItemClicked(User user, View view) {
-        // By default, access account if option is clicked
-        onAccountClicked(user);
-    }
-
-    @Override
-    public void onAccountClicked(User user) {
+    public void onClick(User user) {
         final ReceiveExternalFilesActivity parentActivity = (ReceiveExternalFilesActivity) getActivity();
         if (parentActivity != null) {
             parentActivity.changeAccount(user.toPlatformAccount());

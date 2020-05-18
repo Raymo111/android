@@ -40,7 +40,6 @@ import com.owncloud.android.R;
 import com.owncloud.android.lib.common.OwnCloudAccount;
 import com.owncloud.android.lib.common.utils.Log_OC;
 import com.owncloud.android.ui.activity.BaseActivity;
-import com.owncloud.android.ui.activity.ReceiveExternalFilesActivity;
 import com.owncloud.android.utils.DisplayUtils;
 import com.owncloud.android.utils.ThemeUtils;
 
@@ -296,20 +295,13 @@ public class UserListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
         private User user;
 
-
         AccountViewHolderItem(@NonNull View view) {
             super(view);
             this.imageViewItem = view.findViewById(R.id.user_icon);
             this.checkViewItem = view.findViewById(R.id.ticker);
             this.usernameViewItem = view.findViewById(R.id.user_name);
             this.accountViewItem = view.findViewById(R.id.account);
-            ImageView accountMenu = view.findViewById(R.id.account_menu);
-
             view.setOnClickListener(this);
-            if(context instanceof ReceiveExternalFilesActivity) {
-                accountMenu.setVisibility(View.GONE);
-            }
-            accountMenu.setOnClickListener(this);
         }
 
         public void setData(User user) {
@@ -317,13 +309,9 @@ public class UserListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         }
 
         @Override
-        public void onClick(View view) {
-            if (clickListener != null && view.isEnabled()) {
-                if (view.getId() == R.id.account_menu) {
-                    clickListener.onOptionItemClicked(user, view);
-                } else {
-                    clickListener.onAccountClicked(user);
-                }
+        public void onClick(View v) {
+            if (clickListener != null && v.isEnabled()) {
+                clickListener.onClick(user);
             }
         }
     }
@@ -340,8 +328,6 @@ public class UserListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     public interface ClickListener {
-        void onOptionItemClicked(User user, View view);
-
-        void onAccountClicked(User user);
+        void onClick(User user);
     }
 }

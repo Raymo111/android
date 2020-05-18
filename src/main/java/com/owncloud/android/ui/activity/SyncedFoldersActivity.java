@@ -177,7 +177,9 @@ public class SyncedFoldersActivity extends FileActivity implements SyncedFolderA
 
         // setup toolbar
         setupToolbar();
-        updateActionBarTitleAndHomeButtonByString(getString(R.string.drawer_synced_folders));
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setTitle(R.string.drawer_synced_folders);
+        }
 
         // setup drawer
         setupDrawer(R.id.nav_synced_folders);
@@ -188,6 +190,12 @@ public class SyncedFoldersActivity extends FileActivity implements SyncedFolderA
         }
 
         setupContent();
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            ThemeUtils.setColoredTitle(getSupportActionBar(), getString(R.string.drawer_synced_folders), this);
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         if (ThemeUtils.themingEnabled(this)) {
             setTheme(R.style.FallbackThemingTheme);

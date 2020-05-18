@@ -164,15 +164,15 @@ public final class MimeTypeUtil {
         int drawableId;
 
         if (isSharedViaLink) {
-            drawableId = R.drawable.folder_shared_link;
+            drawableId = R.drawable.folder_public;
         } else if (isSharedViaUsers) {
-            drawableId = R.drawable.folder_shared_users;
+            drawableId = R.drawable.shared_with_me_folder;
         } else if (isEncrypted) {
-            drawableId = R.drawable.folder_encrypted;
+            drawableId = R.drawable.ic_list_encrypted_folder;
         } else if (WebdavEntry.MountType.EXTERNAL == mountType) {
             drawableId = R.drawable.folder_external;
         } else if (WebdavEntry.MountType.GROUP == mountType) {
-            drawableId = R.drawable.folder_group;
+            drawableId = R.drawable.ic_folder_group;
         } else {
             drawableId = R.drawable.folder;
         }

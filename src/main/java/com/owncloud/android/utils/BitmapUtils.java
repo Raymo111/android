@@ -430,20 +430,11 @@ public final class BitmapUtils {
     }
 
     public static void setRoundedBitmap(Bitmap thumbnail, ImageView imageView) {
-        BitmapUtils.setRoundedBitmap(getResources(),
-                                     thumbnail,
-                                     getResources().getDimension(R.dimen.file_icon_rounded_corner_radius),
-                                     imageView);
-    }
+        Resources resources = MainApp.getAppContext().getResources();
 
-    public static void setRoundedBitmapForGridMode(Bitmap thumbnail, ImageView imageView){
-        BitmapUtils.setRoundedBitmap(getResources(),
+        BitmapUtils.setRoundedBitmap(resources,
                                      thumbnail,
-                                     getResources().getDimension(R.dimen.file_icon_rounded_corner_radius_for_grid_mode),
+                                     resources.getDimension(R.dimen.file_icon_rounded_corner_radius),
                                      imageView);
-    }
-
-    private static Resources getResources(){
-        return MainApp.getAppContext().getResources();
     }
 }

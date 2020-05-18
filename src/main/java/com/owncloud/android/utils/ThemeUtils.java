@@ -309,16 +309,12 @@ public final class ThemeUtils {
      * @param supportActionBar
      */
     public static void tintBackButton(@Nullable ActionBar supportActionBar, Context context) {
-        tintBackButton(supportActionBar, context, ThemeUtils.appBarPrimaryFontColor(context));
-    }
-
-    public static void tintBackButton(@Nullable ActionBar supportActionBar, Context context, @ColorInt int color) {
         if (supportActionBar == null) {
             return;
         }
 
         Drawable backArrow = context.getResources().getDrawable(R.drawable.ic_arrow_back);
-        supportActionBar.setHomeAsUpIndicator(ThemeUtils.tintDrawable(backArrow, color));
+        supportActionBar.setHomeAsUpIndicator(ThemeUtils.tintDrawable(backArrow, ThemeUtils.appBarPrimaryFontColor(context)));
     }
 
     public static Spanned getColoredTitle(String title, int color) {
@@ -472,13 +468,7 @@ public final class ThemeUtils {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 View decor = window.getDecorView();
                 if (isLightTheme) {
-                    int systemUiFlagLightStatusBar;
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                        systemUiFlagLightStatusBar = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
-                    } else {
-                        systemUiFlagLightStatusBar = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
-                    }
-                    decor.setSystemUiVisibility(systemUiFlagLightStatusBar);
+                    decor.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
                 } else {
                     decor.setSystemUiVisibility(0);
                 }
@@ -560,8 +550,8 @@ public final class ThemeUtils {
     /**
      * Theme search view
      *
-     * @param searchView searchView to be changed
-     * @param context    the app's context
+     * @param searchView       searchView to be changed
+     * @param context          the app's context
      */
     public static void themeSearchView(SearchView searchView, Context context) {
         // hacky as no default way is provided
@@ -638,13 +628,10 @@ public final class ThemeUtils {
         return String.format("#%06X", 0xFFFFFF & color);
     }
 
-    public static void tintFloatingActionButton(FloatingActionButton button, Context context) {
+    public static void tintFloatingActionButton(FloatingActionButton button, @DrawableRes int
+        drawable, Context context) {
         button.setBackgroundTintList(ColorStateList.valueOf(ThemeUtils.primaryColor(context)));
         button.setRippleColor(ThemeUtils.primaryDarkColor(context));
-    }
-
-    public static void drawableFloatingActionButton(FloatingActionButton button, @DrawableRes int
-        drawable, Context context) {
         button.setImageDrawable(ThemeUtils.tintDrawable(drawable, ThemeUtils.fontColor(context)));
     }
 

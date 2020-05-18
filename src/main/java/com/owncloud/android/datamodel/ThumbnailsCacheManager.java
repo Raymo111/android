@@ -45,7 +45,6 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.google.android.material.button.MaterialButton;
 import com.nextcloud.client.network.ConnectivityService;
 import com.owncloud.android.MainApp;
 import com.owncloud.android.R;
@@ -428,12 +427,22 @@ public final class ThumbnailsCacheManager {
         private String mImageKey;
         private FileDataStorageManager mStorageManager;
         private GetMethod getMethod;
+        private boolean roundedCorners = false;
         private Listener mListener;
-        private boolean gridViewEnabled = false;
 
         public ThumbnailGenerationTask(ImageView imageView, FileDataStorageManager storageManager, Account account)
                 throws IllegalArgumentException {
             this(imageView, storageManager, account, null);
+        }
+
+        public ThumbnailGenerationTask(ImageView imageView,
+                                       FileDataStorageManager storageManager,
+                                       Account account,
+                                       List<ThumbnailGenerationTask> asyncTasks,
+                                       boolean roundedCorners)
+            throws IllegalArgumentException {
+            this(imageView, storageManager, account, asyncTasks);
+            this.roundedCorners = roundedCorners;
         }
 
         public ThumbnailGenerationTask(ImageView imageView, FileDataStorageManager storageManager,
@@ -447,14 +456,6 @@ public final class ThumbnailsCacheManager {
             mStorageManager = storageManager;
             mAccount = account;
             mAsyncTasks = asyncTasks;
-        }
-
-        public ThumbnailGenerationTask(ImageView imageView, FileDataStorageManager storageManager,
-                                       Account account, List<ThumbnailGenerationTask> asyncTasks,
-                                       boolean gridViewEnabled)
-            throws IllegalArgumentException {
-            this(imageView, storageManager, account, asyncTasks);
-            this.gridViewEnabled = gridViewEnabled;
         }
 
         public GetMethod getGetMethod() {
@@ -542,10 +543,10 @@ public final class ThumbnailsCacheManager {
                         tagId = String.valueOf(((TrashbinFile) mFile).getRemoteId());
                     }
                     if (String.valueOf(imageView.getTag()).equals(tagId)) {
-                        if (gridViewEnabled){
-                            BitmapUtils.setRoundedBitmapForGridMode(bitmap, imageView);
+                        if (roundedCorners) {
+                            BitmapUtils.setRoundedBitmap(bitmap, imageView);
                         } else {
-                        BitmapUtils.setRoundedBitmap(bitmap, imageView);
+                            imageView.setImageBitmap(bitmap);
                         }
                     }
                 }
@@ -672,7 +673,7 @@ public final class ThumbnailsCacheManager {
          *
          * @return int
          */
-        private int getThumbnailDimension() {
+        public int getThumbnailDimension() {
             // Converts dp to pixel
             Resources r = MainApp.getAppContext().getResources();
             Double d = Math.pow(2, Math.floor(Math.log(r.getDimension(R.dimen.file_icon_size_grid)) / Math.log(2)));
@@ -1041,28 +1042,51 @@ public final class ThumbnailsCacheManager {
     }
 
     public static boolean cancelPotentialAvatarWork(Object file, Object callContext) {
-        if (callContext instanceof ImageView ||
-            callContext instanceof MenuItem ||
-            callContext instanceof MaterialButton) {
-
-            AvatarGenerationTask avatarWorkerTask = getAvatarWorkerTask(callContext);
-            if (avatarWorkerTask != null) {
-                final Object usernameData = avatarWorkerTask.mUserId;
-                // If usernameData is not yet set or it differs from the new data
-                if (usernameData == null || !usernameData.equals(file)) {
-                    // Cancel previous task
-                    avatarWorkerTask.cancel(true);
-                    Log_OC.v(TAG, "Cancelled generation of avatar for a reused imageView");
-                } else {
-                    // The same work is already in progress
-                    return false;
-                }
-            }
-            // No task associated with the ImageView, or an existing task was cancelled
-            return true;
-        } else {
-            return false;
+        if (callContext instanceof ImageView) {
+            return cancelPotentialAvatarWork(file, (ImageView) callContext);
+        } else if (callContext instanceof MenuItem) {
+            return cancelPotentialAvatarWork(file, (MenuItem)callContext);
         }
+
+        return false;
+    }
+
+    public static boolean cancelPotentialAvatarWork(Object file, ImageView imageView) {
+        final AvatarGenerationTask avatarWorkerTask = getAvatarWorkerTask(imageView);
+
+        if (avatarWorkerTask != null) {
+            final Object usernameData = avatarWorkerTask.mUserId;
+            // If usernameData is not yet set or it differs from the new data
+            if (usernameData == null || !usernameData.equals(file)) {
+                // Cancel previous task
+                avatarWorkerTask.cancel(true);
+                Log_OC.v(TAG, "Cancelled generation of avatar for a reused imageView");
+            } else {
+                // The same work is already in progress
+                return false;
+            }
+        }
+        // No task associated with the ImageView, or an existing task was cancelled
+        return true;
+    }
+
+    public static boolean cancelPotentialAvatarWork(Object file, MenuItem menuItem) {
+        final AvatarGenerationTask avatarWorkerTask = getAvatarWorkerTask(menuItem);
+
+        if (avatarWorkerTask != null) {
+            final Object usernameData = avatarWorkerTask.mUserId;
+            // If usernameData is not yet set or it differs from the new data
+            if (usernameData == null || !usernameData.equals(file)) {
+                // Cancel previous task
+                avatarWorkerTask.cancel(true);
+                Log_OC.v(TAG, "Cancelled generation of avatar for a reused imageView");
+            } else {
+                // The same work is already in progress
+                return false;
+            }
+        }
+        // No task associated with the ImageView, or an existing task was cancelled
+        return true;
     }
 
     public static ThumbnailGenerationTask getBitmapWorkerTask(ImageView imageView) {
@@ -1133,11 +1157,9 @@ public final class ThumbnailsCacheManager {
 
     public static AvatarGenerationTask getAvatarWorkerTask(Object callContext) {
         if (callContext instanceof ImageView) {
-            return getAvatarWorkerTask(((ImageView) callContext).getDrawable());
+            return getAvatarWorkerTask(((ImageView)callContext).getDrawable());
         } else if (callContext instanceof MenuItem) {
-            return getAvatarWorkerTask(((MenuItem) callContext).getIcon());
-        } else if (callContext instanceof MaterialButton) {
-            return getAvatarWorkerTask(((MaterialButton) callContext).getIcon());
+            return getAvatarWorkerTask(((MenuItem)callContext).getIcon());
         }
 
         return null;

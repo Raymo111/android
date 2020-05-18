@@ -53,7 +53,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
-import com.google.android.material.button.MaterialButton;
 import com.google.android.material.navigation.NavigationView;
 import com.nextcloud.client.account.User;
 import com.nextcloud.client.di.Injectable;
@@ -406,18 +405,26 @@ public abstract class DrawerActivity extends ToolbarActivity
 
         switch (menuItem.getItemId()) {
             case R.id.nav_all_files:
-                showFiles(false);
-                if ((this instanceof FileDisplayActivity) &&
-                    !(((FileDisplayActivity) this).getListOfFilesFragment() instanceof PhotoFragment)) {
-                    ((FileDisplayActivity) this).browseToRoot();
-                    EventBus.getDefault().post(new ChangeMenuEvent());
+                if (this instanceof FileDisplayActivity) {
+                    if (((FileDisplayActivity) this).getListOfFilesFragment() instanceof PhotoFragment) {
+                        Intent intent = new Intent(getApplicationContext(), FileDisplayActivity.class);
+                        intent.putExtra(FileDisplayActivity.DRAWER_MENU_ID, menuItem.getItemId());
+                        intent.setAction(FileDisplayActivity.ALL_FILES);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                    } else {
+                        ((FileDisplayActivity) this).browseToRoot();
+                        showFiles(false);
+                        EventBus.getDefault().post(new ChangeMenuEvent());
+                    }
                 } else {
+                    showFiles(false);
                     Intent intent = new Intent(getApplicationContext(), FileDisplayActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.setAction(FileDisplayActivity.ALL_FILES);
                     intent.putExtra(FileDisplayActivity.DRAWER_MENU_ID, menuItem.getItemId());
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }
+
                 break;
             case R.id.nav_favorites:
                 handleSearchEvents(new SearchEvent("", SearchRemoteOperation.SearchType.FAVORITE_SEARCH),
@@ -508,18 +515,14 @@ public abstract class DrawerActivity extends ToolbarActivity
                 break;
 
             case R.id.drawer_menu_account_manage:
-                openManageAccounts();
+                Intent manageAccountsIntent = new Intent(getApplicationContext(), ManageAccountsActivity.class);
+                startActivityForResult(manageAccountsIntent, ACTION_MANAGE_ACCOUNTS);
                 break;
 
             default:
                 accountClicked(menuItem.getItemId());
                 break;
         }
-    }
-
-    public void openManageAccounts() {
-        Intent manageAccountsIntent = new Intent(getApplicationContext(), ManageAccountsActivity.class);
-        startActivityForResult(manageAccountsIntent, ACTION_MANAGE_ACCOUNTS);
     }
 
     private void startPhotoSearch(MenuItem menuItem) {
@@ -1364,28 +1367,22 @@ public abstract class DrawerActivity extends ToolbarActivity
     @Override
     public void avatarGenerated(Drawable avatarDrawable, Object callContext) {
         if (callContext instanceof MenuItem) {
-            MenuItem menuItem = (MenuItem) callContext;
-            menuItem.setIcon(avatarDrawable);
+            MenuItem mi = (MenuItem) callContext;
+            mi.setIcon(avatarDrawable);
         } else if (callContext instanceof ImageView) {
-            ImageView imageView = (ImageView) callContext;
-            imageView.setImageDrawable(avatarDrawable);
-        } else if (callContext instanceof MaterialButton) {
-            MaterialButton materialButton = (MaterialButton) callContext;
-            materialButton.setIcon(avatarDrawable);
+            ImageView iv = (ImageView) callContext;
+            iv.setImageDrawable(avatarDrawable);
         }
     }
 
     @Override
     public boolean shouldCallGeneratedCallback(String tag, Object callContext) {
         if (callContext instanceof MenuItem) {
-            MenuItem menuItem = (MenuItem) callContext;
-            return String.valueOf(menuItem.getTitle()).equals(tag);
+            MenuItem mi = (MenuItem) callContext;
+            return String.valueOf(mi.getTitle()).equals(tag);
         } else if (callContext instanceof ImageView) {
-            ImageView imageView = (ImageView) callContext;
-            return String.valueOf(imageView.getTag()).equals(tag);
-        } else if (callContext instanceof MaterialButton) {
-            MaterialButton materialButton = (MaterialButton) callContext;
-            return String.valueOf(materialButton.getTag()).equals(tag);
+            ImageView iv = (ImageView) callContext;
+            return String.valueOf(iv.getTag()).equals(tag);
         }
         return false;
     }
