@@ -32,6 +32,7 @@
     <dimen name="file_icon_size">40dp</dimen>
     <dimen name="file_icon_size_grid">128dp</dimen>
     <dimen name="file_icon_rounded_corner_radius">8dp</dimen>
+    <dimen name="file_icon_rounded_corner_radius_for_grid_mode">3dp</dimen>
     <dimen name="file_avatar_size">128dp</dimen>
     <dimen name="standard_padding">16dp</dimen>
     <dimen name="standard_double_padding">32dp</dimen>
@@ -116,13 +117,15 @@
     <dimen name="grid_image_shared_icon_layout_top_margin">24dp</dimen>
     <dimen name="grid_image_local_file_indicator_layout_width">16dp</dimen>
     <dimen name="grid_image_local_file_indicator_layout_height">16dp</dimen>
+    <dimen name="grid_image_icon_margin">14dp</dimen>
+    <dimen name="grid_image_icon_padding">14dp</dimen>
     <dimen name="grid_item_shared_icon_layout_top_margin">24dp</dimen>
     <dimen name="grid_item_local_file_indicator_layout_width">16dp</dimen>
     <dimen name="grid_item_local_file_indicator_layout_height">16dp</dimen>
     <dimen name="grid_sync_item_layout_next_text_size">22sp</dimen>
     <dimen name="grid_sync_item_layout_counter_text_size">22sp</dimen>
-    <dimen name="list_item_favorite_action_layout_width">16dp</dimen>
-    <dimen name="list_item_favorite_action_layout_height">16dp</dimen>
+    <dimen name="list_item_favorite_action_layout_width">14dp</dimen>
+    <dimen name="list_item_favorite_action_layout_height">14dp</dimen>
     <dimen name="list_item_local_file_indicator_layout_width">12dp</dimen>
     <dimen name="list_item_local_file_indicator_layout_height">12dp</dimen>
     <dimen name="preview_error_image_layout_width">72dp</dimen>

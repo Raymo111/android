@@ -79,6 +79,7 @@ import androidx.annotation.StringRes;
 import androidx.appcompat.app.ActionBar;
 import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.FragmentManager;
+import androidx.lifecycle.Lifecycle;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindString;
 import butterknife.BindView;
@@ -141,12 +142,7 @@ public class UserInfoActivity extends FileActivity implements Injectable {
         setContentView(R.layout.user_info_layout);
         unbinder = ButterKnife.bind(this);
 
-
-        boolean useBackgroundImage = URLUtil.isValidUrl(
-                getStorageManager().getCapability(user.getAccountName()).getServerBackground());
-
-        setupToolbar(useBackgroundImage);
-
+        setupToolbar(false);
 
         // set the back button from action bar
         ActionBar actionBar = getSupportActionBar();
@@ -155,10 +151,8 @@ public class UserInfoActivity extends FileActivity implements Injectable {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setTitle("");
         }
-
-        // set title Action bar
-        updateActionBarTitleAndHomeButtonByString("");
 
         mUserInfoList.setAdapter(new UserInfoAdapter(null, ThemeUtils.primaryColor(getAccount(), true, this)));
 
@@ -229,10 +223,9 @@ public class UserInfoActivity extends FileActivity implements Injectable {
 
     private void setHeaderImage() {
         if (getStorageManager().getCapability(user.getAccountName()).getServerBackground() != null) {
-            ViewGroup appBar = findViewById(R.id.appbar);
+            ImageView backgroundImageView = findViewById(R.id.drawer_header_background);
 
-            if (appBar != null) {
-                ImageView backgroundImageView = appBar.findViewById(R.id.drawer_header_background);
+            if (backgroundImageView != null) {
 
                 String background = getStorageManager().getCapability(user.getAccountName()).getServerBackground();
                 int primaryColor = ThemeUtils.primaryColor(getAccount(), false, this);
@@ -330,16 +323,18 @@ public class UserInfoActivity extends FileActivity implements Injectable {
             RemoteOperation getRemoteUserInfoOperation = new GetUserInfoRemoteOperation();
             RemoteOperationResult result = getRemoteUserInfoOperation.execute(user.toPlatformAccount(), this);
 
-            if (result.isSuccess() && result.getData() != null) {
-                userInfo = (UserInfo) result.getData().get(0);
+            if (getLifecycle().getCurrentState().isAtLeast(Lifecycle.State.RESUMED)) {
+                if (result.isSuccess() && result.getData() != null) {
+                    userInfo = (UserInfo) result.getData().get(0);
 
-                runOnUiThread(() -> populateUserInfoUi(userInfo));
-
-            } else {
-                // show error
-                runOnUiThread(() -> setErrorMessageForMultiList(sorryMessage, result.getLogMessage(),
-                        R.drawable.ic_list_empty_error));
-                Log_OC.d(TAG, result.getLogMessage());
+                    runOnUiThread(() -> populateUserInfoUi(userInfo));
+                } else {
+                    // show error
+                    runOnUiThread(() -> setErrorMessageForMultiList(sorryMessage,
+                                                                    result.getLogMessage(),
+                                                                    R.drawable.ic_list_empty_error));
+                    Log_OC.d(TAG, result.getLogMessage());
+                }
             }
         });
 

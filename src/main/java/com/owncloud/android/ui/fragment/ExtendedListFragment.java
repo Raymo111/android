@@ -54,6 +54,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.android.material.behavior.HideBottomViewOnScrollBehavior;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.nextcloud.client.account.UserAccountManager;
@@ -85,6 +86,7 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.appcompat.widget.SearchView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.MenuItemCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -174,6 +176,10 @@ public class ExtendedListFragment extends Fragment implements
 
     public FloatingActionButton getFabMain() {
         return mFabMain;
+    }
+
+    public void setLoading(boolean enabled) {
+        mRefreshListLayout.setRefreshing(enabled);
     }
 
     public void switchToGridView() {
@@ -381,7 +387,8 @@ public class ExtendedListFragment extends Fragment implements
         mSwitchGridViewButton = v.findViewById(R.id.switch_grid_view_button);
 
         mFabMain = v.findViewById(R.id.fab_main);
-        ThemeUtils.tintFloatingActionButton(mFabMain, R.drawable.ic_plus, getContext());
+        ThemeUtils.tintFloatingActionButton(mFabMain, requireContext());
+        ThemeUtils.drawableFloatingActionButton(mFabMain, R.drawable.ic_plus, requireContext());
 
         return v;
     }
@@ -544,11 +551,9 @@ public class ExtendedListFragment extends Fragment implements
             if ((activity = getActivity()) != null && activity instanceof FileDisplayActivity) {
                 FileDisplayActivity fileDisplayActivity = (FileDisplayActivity) activity;
                 fileDisplayActivity.setDrawerIndicatorEnabled(fileDisplayActivity.isDrawerIndicatorAvailable());
+                fileDisplayActivity.hideSearchView(fileDisplayActivity.getCurrentDir());
             }
         }
-
-        mRefreshListLayout.setRefreshing(false);
-
         if (mOnRefreshListener != null) {
             mOnRefreshListener.onRefresh();
         }
@@ -584,13 +589,36 @@ public class ExtendedListFragment extends Fragment implements
             getActivity().runOnUiThread(() -> {
                 if (visible) {
                     mFabMain.show();
-                    int primaryColor = ThemeUtils.primaryColor(getContext());
-                    mFabMain.setBackgroundTintList(ColorStateList.valueOf(primaryColor));
-                    mFabMain.setRippleColor(primaryColor);
+                    ThemeUtils.tintFloatingActionButton(mFabMain, requireContext());
                 } else {
                     mFabMain.hide();
                 }
+
+                showFabWithBehavior(visible);
             });
+        }
+    }
+
+    /**
+     * Remove this, if HideBottomViewOnScrollBehavior is fix by Google
+     *
+     * @param visible
+     */
+    private void showFabWithBehavior(boolean visible) {
+        ViewGroup.LayoutParams layoutParams = mFabMain.getLayoutParams();
+        if (layoutParams instanceof CoordinatorLayout.LayoutParams) {
+            CoordinatorLayout.Behavior coordinatorLayoutBehavior =
+                ((CoordinatorLayout.LayoutParams) layoutParams).getBehavior();
+            if (coordinatorLayoutBehavior instanceof HideBottomViewOnScrollBehavior) {
+                @SuppressWarnings("unchecked")
+                HideBottomViewOnScrollBehavior<FloatingActionButton> behavior =
+                    (HideBottomViewOnScrollBehavior<FloatingActionButton>) coordinatorLayoutBehavior;
+                if (visible) {
+                    behavior.slideUp(mFabMain);
+                } else {
+                    behavior.slideDown(mFabMain);
+                }
+            }
         }
     }
 
@@ -606,9 +634,7 @@ public class ExtendedListFragment extends Fragment implements
             getActivity().runOnUiThread(() -> {
                 if (enabled) {
                     mFabMain.setEnabled(true);
-                    int primaryColor = ThemeUtils.primaryColor(getContext());
-                    mFabMain.setBackgroundTintList(ColorStateList.valueOf(primaryColor));
-                    mFabMain.setRippleColor(primaryColor);
+                    ThemeUtils.tintFloatingActionButton(mFabMain, requireContext());
                 } else {
                     mFabMain.setEnabled(false);
                     mFabMain.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
@@ -680,12 +706,10 @@ public class ExtendedListFragment extends Fragment implements
             public void run() {
 
                 if (searchType == SearchType.NO_SEARCH) {
-                    setMessageForEmptyList(
-                        R.string.file_list_empty_headline,
-                        R.string.file_list_empty,
-                        R.drawable.ic_list_empty_folder,
-                        true
-                    );
+                    setMessageForEmptyList(R.string.file_list_empty_headline,
+                                           R.string.file_list_empty,
+                                           R.drawable.ic_list_empty_folder,
+                                           true);
                 } else if (searchType == SearchType.FILE_SEARCH) {
                     setMessageForEmptyList(R.string.file_list_empty_headline_server_search,
                                            R.string.file_list_empty,
@@ -772,8 +796,6 @@ public class ExtendedListFragment extends Fragment implements
 
     @Override
     public void onRefresh(boolean ignoreETag) {
-        mRefreshListLayout.setRefreshing(false);
-
         if (mOnRefreshListener != null) {
             mOnRefreshListener.onRefresh();
         }
